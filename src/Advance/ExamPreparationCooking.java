@@ -3,15 +3,13 @@ package Advance;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class ExamPreparation {
+public class ExamPreparationCooking {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         ArrayDeque<Integer> liquids = new ArrayDeque<>();
         Arrays.stream(sc.nextLine().split("\\s+"))
                 .map(Integer::parseInt)
                 .forEach(liquids::add);
-// instead of ForEach:
-//               .collect(Collectors.toCollection(ArrayDeque::new));
 
         ArrayDeque<Integer> ingredients = new ArrayDeque<>();
         Arrays.stream(sc.nextLine().split("\\s+"))
