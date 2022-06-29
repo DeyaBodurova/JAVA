@@ -20,10 +20,7 @@ public class AAExamTask1 {
         while (!milkValue.isEmpty() && !cacaoPowderValue.isEmpty()) {
             double cacaoPowderValueCurrent = cacaoPowderValue.peek();
             double newMilk = milkValue.peek() + 10;
-//            double sum = milkValue.poll() + cacaoPowderValue.pop();
-//            double cacaoPercentage1 = cacaoPowderValueCurrent / sum;
             int cacaoPercentage = (int)((cacaoPowderValueCurrent / (milkValue.poll() + cacaoPowderValue.pop()))*100);
-//            int cacaoPercentage = (int) cacaoPercentage1;
             switch (cacaoPercentage) {
                 case 30:
                     chocolates.replace("Milk Chocolate", chocolates.get("Milk Chocolate"),
