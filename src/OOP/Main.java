@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Card Suits: ");
-        Arrays.stream(Suits.values()).forEach(Suits ->
-                System.out.printf("Ordinal value: %d; Name value: %s\n", Suits.ordinal(), Suits.name()));
+        System.out.println("Card Ranks: ");
+        Arrays.stream(CardRanks.values()).forEach(CardRanks ->
+                System.out.printf("Ordinal value: %d; Name value: %s\n", CardRanks.ordinal(), CardRanks.name()));
     }
 }
