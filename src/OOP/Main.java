@@ -1,11 +1,13 @@
 package OOP;
-
-import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Card Ranks: ");
-        Arrays.stream(CardRanks.values()).forEach(CardRanks ->
-                System.out.printf("Ordinal value: %d; Name value: %s\n", CardRanks.ordinal(), CardRanks.name()));
+        Scanner sc = new Scanner(System.in);
+        CardRanks cardRanks = CardRanks.valueOf(sc.nextLine());
+        Suits suits = Suits.valueOf(sc.nextLine());
+
+        System.out.printf("Card name: %s of %s; Card power: %d",
+                cardRanks, suits, cardRanks.getRankPower() + suits.getSuitsPower());
     }
 }
