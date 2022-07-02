@@ -41,9 +41,15 @@ public class Main {
             }
         }
         if (isInBounds(galaxy, evilRow, evilCol)) {
+            int rowToBecomeZero = evilRow;
+            int colToBecomeZero = evilCol;
             for (int row = evilRow; row >= 0; row--) {
                 for (int col = evilCol; col >= 0; col--) {
-                    galaxy[row][col] = 0;
+                    if(rowToBecomeZero == row && colToBecomeZero==col) {
+                        galaxy[row][col] = 0;
+                        rowToBecomeZero--;
+                        colToBecomeZero--;
+                    }
                 }
             }
         }
