@@ -10,6 +10,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         List<String> trafficLights  = Arrays.stream(sc.nextLine().split("\\s+"))
                 .collect(Collectors.toList());
+        int changeTrafficLights = Integer.parseInt(sc.nextLine());
 
     }
 }
