@@ -12,7 +12,11 @@ public class Main {
         List<String> colours  = Arrays.stream(sc.nextLine().split("\\s+"))
                 .collect(Collectors.toList());
         int changeTrafficLights = Integer.parseInt(sc.nextLine());
-        List<String> trafficLights = new ArrayList<>();
-
+        List<TrafficLight> trafficLights = new ArrayList<>();
+        for (String colour:colours) {
+            Colours currentColour = Colours.valueOf(colour);
+            TrafficLight currentTrafficLight = new TrafficLight(currentColour);
+            trafficLights.add(currentTrafficLight);
+        }
     }
 }
