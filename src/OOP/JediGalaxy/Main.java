@@ -24,10 +24,36 @@ public class Main {
         int evilRow = evilCoordinates[0];
         int evilCol = evilCoordinates[1];
         String input = sc.nextLine();
+        int jediSum = 0;
         moveEvil(galaxy, evilRow, evilCol);
-//        while (!input.equals("Let the Force be with you")) {
-//            input = sc.nextLine();
-//        }
+        moveJedi(galaxy, jediRow, jediCol, jediSum);
+    }
+
+    private static int moveJedi(int[][] galaxy, int jediRow, int jediCol, int jediSum) {
+        if (!isInBounds(galaxy, jediRow, jediCol)) {
+            while (!isInBounds(galaxy,jediRow,jediCol)) {
+                if (jediRow >= galaxy.length) {
+                    jediRow--;
+                } else if (jediCol < 0) {
+                    jediCol++;
+                }
+            }
+        }
+        if (isInBounds(galaxy, jediRow, jediCol)) {
+            int rowToPass = jediRow;
+            int colToPass = jediCol;
+            for (int row = jediRow; row >= 0; row--) {
+                for (int col = jediCol; col < galaxy.length; col++) {
+                    if(rowToPass == row && colToPass==col) {
+                        jediSum = jediSum + galaxy[row][col];
+                            rowToPass--;
+                            colToPass++;
+                    }
+                }
+            }
+        }
+        System.out.println(jediSum);
+        return jediSum;
     }
 
     private static void moveEvil(int[][] galaxy, int evilRow, int evilCol) {
