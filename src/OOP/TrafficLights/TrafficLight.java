@@ -13,13 +13,13 @@ public class TrafficLight {
 
     public void changeColour(Colours currentColour) {
         switch (currentColour){
-            case "RED":
+            case RED:
                 this.currentColour = Colours.GREEN;
                 break;
-            case "GREEN":
+            case GREEN:
                 this.currentColour = Colours.YELLOW;
                 break;
-            case "YELLOW":
+            case YELLOW:
                 this.currentColour = Colours.RED;
                 break;
             default:
