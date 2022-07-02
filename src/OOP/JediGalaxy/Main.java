@@ -16,13 +16,13 @@ public class Main {
         int[] jediCoordinates = Arrays.stream(sc.nextLine().split("\\s+"))
                 .mapToInt(Integer::parseInt)
                 .toArray();
-        int jediRow = jediCoordinates[0];
-        int jediCol = jediCoordinates[1];
+        int jediRow = jediCoordinates[0] - 1;
+        int jediCol = jediCoordinates[1] - 1;
         int[] evilCoordinates = Arrays.stream(sc.nextLine().split("\\s+"))
                 .mapToInt(Integer::parseInt)
                 .toArray();
-        int evilRow = evilCoordinates[0];
-        int evilCol = evilCoordinates[1];
+        int evilRow = evilCoordinates[0] - 1;
+        int evilCol = evilCoordinates[1] - 1;
         String input = sc.nextLine();
         int jediSum = 0;
         moveEvil(galaxy, evilRow, evilCol);
