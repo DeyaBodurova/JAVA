@@ -10,8 +10,9 @@ public class Main {
         int[] coordinates = Arrays.stream(sc.nextLine().split("\\s+"))
                 .mapToInt(e -> Integer.parseInt(e))
                 .toArray();
-
-        int[][] galaxy = new int[][]
+        int row = coordinates[0];
+        int col = coordinates[1];
+        int[][] galaxy = new int[row][col];
 
     }
 }
