@@ -8,8 +8,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        List<String> trafficLights = new ArrayList<>();
-        trafficLights = Arrays.stream(sc.nextLine().split("\\s+"))
+        List<String> trafficLights  = Arrays.stream(sc.nextLine().split("\\s+"))
                 .toList();
 
     }
