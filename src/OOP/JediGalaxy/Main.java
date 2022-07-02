@@ -16,15 +16,19 @@ public class Main {
         while (!command.equals("Let the Force be with you")) {
             int[] jediPosition = readPosition(command);
             int[] evilPosition = readPosition(sc.nextLine());
-            int jediRow = jediPosition[0];
-            int jediCol = jediPosition[1];
+
             int evilRow = evilPosition[0];
             int evilCol = evilPosition[1];
+
             galaxy.moveEvil(evilRow, evilCol);
+
+            int jediRow = jediPosition[0];
+            int jediCol = jediPosition[1];
+
             long jediSum = galaxy.moveJedi(jediRow, jediCol);
+
             command = sc.nextLine();
             System.out.println(jediSum);
-
         }
     }
 

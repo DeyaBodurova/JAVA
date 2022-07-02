@@ -7,11 +7,11 @@ public class Galaxy {
         this.field = field;
     }
 
-    public void moveEvil(int r, int c) {
-        Evil.moveEvil(this.field, r, c);
+    public void moveEvil(int evilRow, int evilCol) {
+        Evil.moveEvil(this.field, evilRow, evilCol);
     }
 
-    public long moveJedi(int r, int c) {
-        return Jedi.moveJedi(this.field, r, c);
+    public long moveJedi(int jediRow, int jediCol) {
+        return Jedi.moveJedi(this.field, jediRow, jediCol);
     }
 }
