@@ -21,9 +21,9 @@ public class Main {
             int evilRow = evilPosition[0];
             int evilCol = evilPosition[1];
             galaxy.moveEvil(evilRow, evilCol);
-            long starsCollected = galaxy.moveJedi(jediRow, jediCol);
+            long jediSum = galaxy.moveJedi(jediRow, jediCol);
             command = sc.nextLine();
-            System.out.println(starsCollected);
+            System.out.println(jediSum);
 
         }
     }

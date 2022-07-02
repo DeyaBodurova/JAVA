@@ -5,18 +5,19 @@ public class BattleField {
 
     public BattleField(int r, int c) {
         this.battleField = new int[r][c];
-        this.fillInBattleField(r,c);
+        this.fillInBattleField(r, c);
     }
 
     public void fillInBattleField(int r, int c) {
-        int num = 0;
-        for (int row = 0; r < r; r++) {
+        int value = 0;
+        for (int row = 0; row < r; row++) {
             for (int col = 0; col < c; col++) {
-                this.battleField[r][c] = num ++;
+                this.battleField[row][col] = value++;
             }
         }
     }
-    public  boolean isInBounds(int r, int c) {
+
+    public boolean isInBounds(int r, int c) {
         return (r >= 0 && r < this.battleField.length) && (c >= 0 && c < this.battleField[r].length);
     }
 
