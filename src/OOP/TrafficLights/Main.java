@@ -8,6 +8,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         List<String> trafficLights = new ArrayList<>();
+        trafficLights = sc.nextLine().split("\\s+")
 
     }
 }
