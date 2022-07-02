@@ -16,21 +16,21 @@ public class Main {
         String input = sc.nextLine();
 
 //        while (!input.equals("Let the Force be with you")) {
-        int[] jediCoordinates = Arrays.stream(input.split("\\s+"))
-                .mapToInt(Integer::parseInt)
-                .toArray();
-        int jediRow = jediCoordinates[0] - 1;
-        int jediCol = jediCoordinates[1] - 1;
-        int[] evilCoordinates = Arrays.stream(sc.nextLine().split("\\s+"))
-                .mapToInt(Integer::parseInt)
-                .toArray();
-        int evilRow = evilCoordinates[0] - 1;
-        int evilCol = evilCoordinates[1] - 1;
-        moveEvil(galaxy, evilRow, evilCol);
+            int[] jediCoordinates = Arrays.stream(input.split("\\s+"))
+                    .mapToInt(Integer::parseInt)
+                    .toArray();
+            int jediRow = jediCoordinates[0] - 1;
+            int jediCol = jediCoordinates[1] - 1;
+            int[] evilCoordinates = Arrays.stream(sc.nextLine().split("\\s+"))
+                    .mapToInt(Integer::parseInt)
+                    .toArray();
+            int evilRow = evilCoordinates[0] - 1;
+            int evilCol = evilCoordinates[1] - 1;
+            moveEvil(galaxy, evilRow, evilCol);
         input = sc.nextLine();
         if (input.equals("Let the Force be with you")) {
-            System.out.println(moveJedi(galaxy, jediRow, jediCol));
-        }
+                System.out.println(moveJedi(galaxy, jediRow, jediCol));
+            }
 //        }
     }
 
@@ -38,7 +38,7 @@ public class Main {
         int jediSum = 0;
 
         if (!isInBounds(galaxy, jediRow, jediCol)) {
-            while (!isInBounds(galaxy, jediRow, jediCol)) {
+            while (!isInBounds(galaxy,jediRow,jediCol)) {
                 if (jediRow >= galaxy.length) {
                     jediRow--;
                 } else if (jediCol < 0) {
@@ -51,10 +51,10 @@ public class Main {
             int colToPass = jediCol;
             for (int row = jediRow; row >= 0; row--) {
                 for (int col = jediCol; col < galaxy.length; col++) {
-                    if (rowToPass == row && colToPass == col) {
+                    if(rowToPass == row && colToPass==col) {
                         jediSum = jediSum + galaxy[row][col];
-                        rowToPass--;
-                        colToPass++;
+                            rowToPass--;
+                            colToPass++;
                     }
                 }
             }
@@ -64,7 +64,7 @@ public class Main {
 
     private static void moveEvil(int[][] galaxy, int evilRow, int evilCol) {
         if (!isInBounds(galaxy, evilRow, evilCol)) {
-            while (!isInBounds(galaxy, evilRow, evilCol)) {
+            while (!isInBounds(galaxy,evilRow,evilCol)) {
                 if (evilRow >= galaxy.length) {
                     evilRow--;
                 } else if (evilCol >= galaxy.length) {
@@ -77,7 +77,7 @@ public class Main {
             int colToBecomeZero = evilCol;
             for (int row = evilRow; row >= 0; row--) {
                 for (int col = evilCol; col >= 0; col--) {
-                    if (rowToBecomeZero == row && colToBecomeZero == col) {
+                    if(rowToBecomeZero == row && colToBecomeZero==col) {
                         galaxy[row][col] = 0;
                         rowToBecomeZero--;
                         colToBecomeZero--;
