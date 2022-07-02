@@ -6,4 +6,8 @@ public class TrafficLight {
     public TrafficLight (Colours currentColour){
         this.currentColour = currentColour;
     }
+
+    public Colours getCurrentColour(){
+        return currentColour;
+    }
 }
