@@ -11,7 +11,7 @@ public class TrafficLight {
         return currentColour;
     }
 
-    public void changeColour(Colours currentColour) {
+    public void changeColour() {
         switch (currentColour){
             case RED:
                 this.currentColour = Colours.GREEN;

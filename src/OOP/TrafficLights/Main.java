@@ -18,5 +18,12 @@ public class Main {
             TrafficLight currentTrafficLight = new TrafficLight(currentColour);
             trafficLights.add(currentTrafficLight);
         }
+        for (int i = 0; i < changeTrafficLights; i++) {
+            for (TrafficLight trafficLight:trafficLights) {
+                trafficLight.changeColour();
+                System.out.print(trafficLight.getCurrentColour() + " ");
+            }
+            System.out.println();
+        }
     }
 }
