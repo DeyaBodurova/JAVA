@@ -13,7 +13,7 @@ public class TestMain {
         int bagCapacity = Integer.parseInt(scanner.nextLine());
         String[] treasure = scanner.nextLine().split("\\s+");
 
-        var bag = new LinkedHashMap<String, LinkedHashMap<String, Long>>();
+        Map bag = new LinkedHashMap<String, LinkedHashMap<String, Long>>();
         int gold = 0;
         int gem = 0;
         int cash = 0;
