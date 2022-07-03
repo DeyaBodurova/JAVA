@@ -1,4 +1,4 @@
-package Advance;
+package Advance.ExamPrep;
 
 import java.util.*;
 import java.util.stream.Collectors;

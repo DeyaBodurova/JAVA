@@ -1,4 +1,4 @@
-package Advance;
+package Advance.ExamPrep;
 
 import java.util.ArrayDeque;
 import java.util.Arrays;
