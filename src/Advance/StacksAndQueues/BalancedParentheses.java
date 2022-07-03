@@ -60,9 +60,8 @@ public class BalancedParentheses {
                     if (!isMatch) {
                         break;
                     }
-
                 }
-                if (stack.isEmpty() && queue.isEmpty()) {
+                if (isMatch) {
                     System.out.println("YES");
                 }
             } else {
