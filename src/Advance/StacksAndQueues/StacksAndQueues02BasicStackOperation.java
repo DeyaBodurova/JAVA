@@ -1,4 +1,4 @@
-package Advance;
+package Advance.StacksAndQueues;
 
 import java.util.Scanner;
 
