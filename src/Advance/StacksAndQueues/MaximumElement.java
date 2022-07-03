@@ -19,7 +19,9 @@ public class MaximumElement {
                     stack.push(command[1]);
                     break;
                 case 2:
+                    if(!stack.isEmpty()) {
                     stack.pop();
+                    }
                     break;
                 case 3:
                     int maxElement = Integer.MIN_VALUE;
