@@ -1,4 +1,4 @@
-package workout;
+package Advance.Exam.workout;
 
 import java.util.Scanner;
 

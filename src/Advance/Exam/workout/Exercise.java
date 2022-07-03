@@ -1,4 +1,4 @@
-package workout;
+package Advance.Exam.workout;
 
 public class Exercise {
     public String name;
