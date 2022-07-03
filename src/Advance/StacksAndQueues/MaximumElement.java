@@ -24,15 +24,17 @@ public class MaximumElement {
                     }
                     break;
                 case 3:
-                    int maxElement = Integer.MIN_VALUE;
-                    while (!stack.isEmpty()){
-                        if(stack.peek()>maxElement){
-                            maxElement = stack.pop();
-                        } else {
-                            stack.pop();
+                    if(!stack.isEmpty()) {
+                        int maxElement = Integer.MIN_VALUE;
+                        while (!stack.isEmpty()) {
+                            if (stack.peek() > maxElement) {
+                                maxElement = stack.pop();
+                            } else {
+                                stack.pop();
+                            }
                         }
+                        System.out.println(maxElement);
                     }
-                    System.out.println(maxElement);
                     break;
                 default:
                     throw new IllegalArgumentException("Invalid command!");
