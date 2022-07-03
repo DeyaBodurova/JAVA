@@ -54,6 +54,7 @@ public class BalancedParentheses {
                             break;
                         default:
                             System.out.println("NO");
+                            isMatch = false;
                             break;
                     }
                     if (!isMatch) {
