@@ -26,11 +26,12 @@ public class MaximumElement {
                 case 3:
                     if(!stack.isEmpty()) {
                         int maxElement = Integer.MIN_VALUE;
-                        while (!stack.isEmpty()) {
-                            if (stack.peek() > maxElement) {
-                                maxElement = stack.pop();
+                        ArrayDeque<Integer> toCheck = stack;
+                        while (!toCheck.isEmpty()) {
+                            if (toCheck.peek() >= maxElement) {
+                                maxElement = toCheck.pop();
                             } else {
-                                stack.pop();
+                                toCheck.pop();
                             }
                         }
                         System.out.println(maxElement);
