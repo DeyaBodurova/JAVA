@@ -27,7 +27,6 @@ public class BalancedParentheses {
                                 stack.pop();
                                 queue.poll();
                             } else {
-                                System.out.println("NO");
                                 isMatch = false;
                                 break;
                             }
@@ -37,7 +36,6 @@ public class BalancedParentheses {
                                 stack.pop();
                                 queue.poll();
                             } else {
-                                System.out.println("NO");
                                 isMatch = false;
                                 break;
                             }
@@ -47,13 +45,11 @@ public class BalancedParentheses {
                                 stack.pop();
                                 queue.poll();
                             } else {
-                                System.out.println("NO");
                                 isMatch = false;
                                 break;
                             }
                             break;
                         default:
-                            System.out.println("NO");
                             isMatch = false;
                             break;
                     }
@@ -63,6 +59,8 @@ public class BalancedParentheses {
                 }
                 if (isMatch) {
                     System.out.println("YES");
+                } else {
+                    System.out.println("NO");
                 }
             } else {
                 System.out.println("NO");
