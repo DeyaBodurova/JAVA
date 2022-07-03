@@ -4,7 +4,7 @@ import java.util.ArrayDeque;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class StacksAndQueues01ReverseNumbersWithAStack {
+public class ReverseNumbersWithAStack {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         ArrayDeque<Integer> stack = new ArrayDeque<>();

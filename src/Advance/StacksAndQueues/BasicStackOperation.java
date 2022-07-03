@@ -2,7 +2,7 @@ package Advance.StacksAndQueues;
 
 import java.util.Scanner;
 
-public class StacksAndQueues02BasicStackOperation {
+public class BasicStackOperation {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
     }
