@@ -39,6 +39,7 @@ public class BasicQueueOperations {
                     }
                     queue.poll();
                 }
+                System.out.println(smallest);
             }
         }
     }
