@@ -6,6 +6,7 @@ public class BalancedParentheses {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         char[] input = sc.nextLine().toCharArray();
+        boolean isMatch = true;
         if (input.length % 2 != 0) {
             System.out.println("NO");
         } else {
@@ -27,6 +28,7 @@ public class BalancedParentheses {
                                 queue.poll();
                             } else {
                                 System.out.println("NO");
+                                isMatch = false;
                                 break;
                             }
                             break;
@@ -36,6 +38,7 @@ public class BalancedParentheses {
                                 queue.poll();
                             } else {
                                 System.out.println("NO");
+                                isMatch = false;
                                 break;
                             }
                             break;
@@ -45,6 +48,7 @@ public class BalancedParentheses {
                                 queue.poll();
                             } else {
                                 System.out.println("NO");
+                                isMatch = false;
                                 break;
                             }
                             break;
@@ -52,6 +56,10 @@ public class BalancedParentheses {
                             System.out.println("NO");
                             break;
                     }
+                    if (!isMatch) {
+                        break;
+                    }
+
                 }
                 if (stack.isEmpty() && queue.isEmpty()) {
                     System.out.println("YES");
