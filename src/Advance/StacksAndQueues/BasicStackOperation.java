@@ -10,8 +10,8 @@ public class BasicStackOperation {
                 .mapToInt(Integer::parseInt)
                 .toArray();
         int toPush = data[0];
-        int toPop = data[0];
-        int checkIfPresent = data[0];
+        int toPop = data[1];
+        int checkIfPresent = data[2];
         List<Integer> numbers = Arrays.stream(sc.nextLine().split("\\s+"))
                 .map(Integer::parseInt)
                 .collect(Collectors.toList());
