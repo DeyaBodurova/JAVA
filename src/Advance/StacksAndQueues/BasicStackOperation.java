@@ -28,10 +28,22 @@ public class BasicStackOperation {
             toPop--;
         }
 
-        if(stack.contains(checkIfPresent)) {
-            System.out.println("true");
+        if (!stack.isEmpty()) {
+            if (stack.contains(checkIfPresent)) {
+                System.out.println("true");
+            } else {
+                int smallest = Integer.MAX_VALUE;
+                while (!stack.isEmpty()) {
+                    if(stack.peek() < smallest){
+                        smallest = stack.pop();
+                    } else {
+                        stack.pop();
+                    }
+                }
+                System.out.println(smallest);
+            }
         } else {
-            System.out.println("false");
+            System.out.println(0);
         }
     }
 }
