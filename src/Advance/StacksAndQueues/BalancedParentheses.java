@@ -7,9 +7,11 @@ public class BalancedParentheses {
         Scanner sc = new Scanner(System.in);
         char[] input = sc.nextLine().toCharArray();
         boolean isMatch = true;
-        if (input.length % 2 != 0) {
-            System.out.println("NO");
-        } else {
+        //TODO to fix
+//        if (input.length % 2 != 0) {
+//            System.out.println("NO");
+//        }
+//        if {
             ArrayDeque<Character> stack = new ArrayDeque<>();
             ArrayDeque<Character> queue = new ArrayDeque<>();
             for (int i = 0; i < input.length / 2; i++) {
@@ -67,4 +69,4 @@ public class BalancedParentheses {
             }
         }
     }
-}
+//}
