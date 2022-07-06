@@ -9,6 +9,6 @@ public class Main {
         double width = Double.parseDouble(sc.nextLine());
         double height = Double.parseDouble(sc.nextLine());
         Box box = new Box (length,width,height);
-        box.calculateSurfaceArea();
+        box.toString();
     }
 }

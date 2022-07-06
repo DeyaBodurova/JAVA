@@ -61,4 +61,11 @@ public class Box {
         double volume = length * height * width;
         return volume;
     }
+
+    @Override
+    public String toString() {
+        String str = System.out.printf("Surface Area - %.2f\nLateral Surface Area - %.2f\nVolume - %.2f\n",
+                calculateSurfaceArea(),calculateLateralSurfaceArea(),calculateVolume()).toString();
+        return str;
+    }
 }
