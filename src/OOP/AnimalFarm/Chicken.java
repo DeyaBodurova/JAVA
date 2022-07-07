@@ -1,8 +1,6 @@
 package OOP.AnimalFarm;
 
 public class Chicken {
-<<<<<<< HEAD
-=======
     private String name;
     private int age;
 
@@ -39,5 +37,4 @@ public class Chicken {
             return 0.75;
         }
     }
->>>>>>> origin/master
 }
