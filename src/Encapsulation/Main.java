@@ -8,7 +8,7 @@ public class Main {
         double length = Double.parseDouble(sc.nextLine());
         double width = Double.parseDouble(sc.nextLine());
         double height = Double.parseDouble(sc.nextLine());
-        Box box = new Box(length,width,height);
-        box.toString();
+//        Box box = new Box(length,width,height);
+//        box.toString();
     }
 }

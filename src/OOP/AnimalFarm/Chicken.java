@@ -18,13 +18,16 @@ public class Chicken {
     }
 
     private void setName(String name) {
-        if (name.length() < 1) {
-            return;
+        if (name == null || (name.length() < 1)) {
+            throw new IllegalArgumentException("Name cannot be empty.");
         }
         this.name = name;
     }
 
     private void setAge(int age) {
+        if (age < 0 || age > 16) {
+            throw new IllegalArgumentException("Age should be between 0 and 15.");
+        }
         this.age = age;
     }
 
@@ -36,5 +39,17 @@ public class Chicken {
         } else {
             return 0.75;
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Chicken{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
+
+    private double calculateProductPerDay() {
+
     }
 }
