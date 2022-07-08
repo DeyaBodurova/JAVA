@@ -21,18 +21,13 @@ public class Person {
         this.name = name;
     }
 
-    public double getMoney() {
-        return money;
-    }
 
     private void setMoney(double money) {
         this.money = money;
     }
 
-   public void buyProduct (Product) {
+   public void buyProduct(Product product) {
 
    }
-
-
 
 }
