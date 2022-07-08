@@ -1,4 +1,4 @@
-package AnimalFarm;
+package OOP.AnimalFarm;
 
 public class Chicken {
     private String name;
