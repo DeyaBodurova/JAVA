@@ -19,7 +19,7 @@ public class Product {
     }
 
     private void setName(String name) {
-        if (name == null || name.length() < 1) {
+        if (name == null || name.trim().equals("")) {
             throw new IllegalArgumentException();
         }
         this.name = name;
