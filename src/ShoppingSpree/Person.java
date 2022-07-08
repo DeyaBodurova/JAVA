@@ -23,6 +23,9 @@ public class Person {
 
 
     private void setMoney(double money) {
+        if(money < 0) {
+            throw new IllegalArgumentException();
+        }
         this.money = money;
     }
 

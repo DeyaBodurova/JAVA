@@ -26,6 +26,9 @@ public class Product {
     }
 
     private void setCost(double cost) {
+        if(cost < 0) {
+            throw new IllegalArgumentException();
+        }
         this.cost = cost;
     }
 }
