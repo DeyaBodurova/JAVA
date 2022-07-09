@@ -7,13 +7,15 @@ public class NumberPyramid {
         Scanner sc = new Scanner(System.in);
         int n = Integer.parseInt(sc.nextLine());
         boolean isBigger = false;
+        int x = 1;
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= i; j++) {
-                if ((i + j) > n) {
+                if (x > n) {
                     isBigger = true;
                     break;
                 }
-                System.out.print(i + j + " ");
+                System.out.print(x + " ");
+                x++;
             }
             if (isBigger) {
                 break;
