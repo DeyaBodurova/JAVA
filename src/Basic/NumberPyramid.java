@@ -13,7 +13,7 @@ public class NumberPyramid {
                     isBigger = true;
                     break;
                 }
-                System.out.print(i * j + " ");
+                System.out.print(i + j + " ");
             }
             if (isBigger) {
                 break;
