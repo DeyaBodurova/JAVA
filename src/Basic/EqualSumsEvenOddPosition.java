@@ -1,23 +1,31 @@
 package Basic;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class EqualSumsEvenOddPosition {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String[] smaller = (sc.nextLine()).split("");
+        int smaller = Integer.parseInt(sc.nextLine());
         int bigger = Integer.parseInt(sc.nextLine());
 
-        for (int n = Integer.parseInt(String.valueOf(smaller)); n <= bigger ; n++) {
-            int current = Integer.parseInt(String.valueOf(smaller));
+        int current = smaller;
+        for (int n = current; n <= bigger ; n++) {
             int sumNumFirst = 0;
             int sumNumSecond = 0;
-            for (int i = 0; i < smaller.length; i++) {
-                if(i % 2 == 0) {
-                    sumNumFirst += i;
+            int x = 0;
+            int left = current;
+            int count= 0;
+            while ( left > 0) {
+                count++;
+                x = left % 10;
+                left = left /10;
+                if(count % 2 == 0) {
+                    sumNumFirst += x;
                 } else {
-                    sumNumSecond += i;
+                    sumNumSecond += x;
                 }
+
             }
             if(sumNumFirst == sumNumSecond) {
                 System.out.print(current + " ");
