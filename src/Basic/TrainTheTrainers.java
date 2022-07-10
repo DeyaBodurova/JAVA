@@ -7,9 +7,11 @@ public class TrainTheTrainers {
         Scanner sc = new Scanner(System.in);
         int juri = Integer.parseInt(sc.nextLine());
         String input = sc.nextLine();
-
+        int presentationCount = 0;
+        double allPresentationGrade = 0;
         while(!input.equalsIgnoreCase("Finish")) {
             String presentation = input;
+            presentationCount++;
             int count = juri;
             double totalSumGrades = 0;
             while(count > 0){
@@ -17,11 +19,13 @@ public class TrainTheTrainers {
                 totalSumGrades+=grade;
                 count--;
             }
-
+            double averageGrade = totalSumGrades / juri;
+            allPresentationGrade += averageGrade;
+            System.out.printf("%s - %.2f\n", presentation, averageGrade);
 
             input = sc.nextLine();
         }
-
+        System.out.printf("Student's final assessment is %.2f.\n", allPresentationGrade /presentationCount);
     }
 }
 //    От конзолата на първият ред се прочита броят на хората в журито n - цяло число в интервала [1…20]
