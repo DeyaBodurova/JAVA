@@ -21,5 +21,7 @@ public class SumPrimeNonPrime {
             }
             input = sc.nextLine();
         }
+        System.out.printf("Sum of all prime numbers is: %d\n", sumPrime);
+        System.out.printf("Sum of all non prime numbers is: %d\n", sumNonPrime);
     }
 }
