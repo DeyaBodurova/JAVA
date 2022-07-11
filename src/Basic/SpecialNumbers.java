@@ -8,7 +8,19 @@ public class SpecialNumbers {
         int n = Integer.parseInt(sc.nextLine());
         boolean isSpecial = true;
         for (int i = 1111; i <= 9999; i++) {
+            int cur = i % 10;
+            int left = 0;
+            while (cur > 0) {
+                if (n % cur == 0) {
+                    cur = cur % 10;
+                    left = cur /10;
 
+                } else {
+                    isSpecial = false;
+                    break;
+                }
+
+            }
         }
 
     }
