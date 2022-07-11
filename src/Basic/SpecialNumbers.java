@@ -4,18 +4,7 @@ import java.util.Scanner;
 
 public class SpecialNumbers {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = Integer.parseInt(sc.nextLine());
-        for (int i = 1111; i <= 9999; i++) {
-            int curr = i;
-            int left = 0;
-            while (curr > 0) {
-                curr = curr % 10;
-                left = curr /10;
 
-            }
-
-        }
     }
 }
 //    Да се напише програма, която чете едно цяло число N, въведено от потребителя, и генерира всички възможни
