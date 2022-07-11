@@ -10,8 +10,14 @@ public class SpecialNumbers {
         for (int i = 1111; i <= 9999; i++) {
 
             while (i > 0) {
-                if (n % i == 0) {
-
+                int m;
+                int r = n % 10;
+                if (r % i == 0) {
+                    r = n % 10;
+                    m = n / 10;
+                } else {
+                    isSpecial = false;
+                    break;
                 }
             }
         }
