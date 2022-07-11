@@ -14,7 +14,6 @@ public class SpecialNumbers {
                 if (n % cur == 0) {
                     cur = cur % 10;
                     left = cur /10;
-
                 } else {
                     isSpecial = false;
                     break;
