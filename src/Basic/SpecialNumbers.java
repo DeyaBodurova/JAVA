@@ -6,9 +6,14 @@ public class SpecialNumbers {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = Integer.parseInt(sc.nextLine());
+        boolean isSpecial = true;
         for (int i = 1111; i <= 9999; i++) {
 
+            while (i > 0) {
+                if (n % i == 0) {
 
+                }
+            }
         }
 
     }
