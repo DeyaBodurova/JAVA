@@ -14,7 +14,9 @@ public class Product {
     }
 
     private void setName(String name) {
-        this.name = name;
+        if (name != null && (!name.trim().isEmpty())) {
+            this.name = name;
+        }
     }
 
     public double getCost() {
@@ -22,7 +24,9 @@ public class Product {
     }
 
     private void setCost(double cost) {
-        this.cost = cost;
+        if (cost >= 0) {
+            this.cost = cost;
+        }
     }
 
 }
