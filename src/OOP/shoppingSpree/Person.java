@@ -17,7 +17,9 @@ public class Person {
     }
 
     private void setName(String name) {
-        this.name = name;
+        if(name!= null && (!name.trim().isEmpty())) {
+            this.name = name;
+        }
     }
 
     public double getMoney() {
@@ -25,9 +27,10 @@ public class Person {
     }
 
     private void setMoney(double money) {
-        this.money = money;
+        if (money >= 0) {
+            this.money = money;
+        }
     }
-
 
     public void buyProduct(Product product) {
 
