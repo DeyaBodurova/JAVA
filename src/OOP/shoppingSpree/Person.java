@@ -33,6 +33,11 @@ public class Person {
     }
 
     public void buyProduct(Product product) {
+        if(money >= product.getCost()) {
+            products.add(product);
+        } else {
+            System.out.printf("%s can't afford %s", getName(), product);
+        }
 
     }
 
