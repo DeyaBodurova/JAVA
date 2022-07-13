@@ -8,8 +8,6 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         List<String> line1 = Arrays.stream(sc.nextLine().split(";")).toList();
-        for (String data : line1) {
-            Person person = new Person(data.split("="));
-        }
+
     }
 }
