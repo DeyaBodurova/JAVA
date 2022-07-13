@@ -13,6 +13,5 @@ public class Main {
         }
         Person person = new Person(data.get(0), Double.parseDouble(data.get(1)));
         List<String> data2 = Arrays.stream(sc.nextLine().split("=")).toList();
-        Person person2 = new Person(data2.get(0), D
     }
 }
