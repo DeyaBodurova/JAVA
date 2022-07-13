@@ -36,7 +36,7 @@ public class Person {
         if(money >= product.getCost()) {
             products.add(product);
         } else {
-            System.out.printf("%s can't afford %s", getName(), product);
+            throw new IllegalArgumentException(String.format("%s can't afford %s", name, product.getName());
         }
 
     }
