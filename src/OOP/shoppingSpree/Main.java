@@ -11,6 +11,5 @@ public class Main {
         for (String data : line1) {
             Person person = new Person(data.split("="));
         }
-        Person person = new Person(data.get(0), Double.parseDouble(data.get(1)));
     }
 }
