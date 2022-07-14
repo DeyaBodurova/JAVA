@@ -41,4 +41,12 @@ public class Person {
 
     }
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", money=" + money +
+                ", products=" + products +
+                '}';
+    }
 }
