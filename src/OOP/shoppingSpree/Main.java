@@ -9,6 +9,9 @@ public class Main {
         Map<String,Person>people = new LinkedHashMap<>();
         Map<String,Person>products = new LinkedHashMap<>();
         String [] peopleInput = sc.nextLine().split(";");
-
+        for (String personData:peopleInput) {
+            String[] personParts = personData.split("=");
+            String name = personData[0];
+        }
     }
 }
