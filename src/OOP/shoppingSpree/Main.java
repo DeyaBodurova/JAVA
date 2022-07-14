@@ -16,7 +16,7 @@ public class Main {
             try {
                 Person person = new Person(name,money);
 
-            } catch (){
+            } catch (IllegalAccessException){
 
             }
         }
