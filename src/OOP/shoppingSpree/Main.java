@@ -15,8 +15,9 @@ public class Main {
             double money = Double.parseDouble(personParts[1]);
             try {
                 Person person = new Person(name,money);
-            } catch (IllegalAccessException){
-
+                people.put(name, person);
+            } catch (IllegalArgumentException e){
+                System.out.println();
             }
         }
     }
