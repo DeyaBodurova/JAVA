@@ -9,6 +9,7 @@ public class Main {
         Map<String,Person> people = new LinkedHashMap<>();
         Map<String,Person>products = new LinkedHashMap<>();
         String [] peopleInput = sc.nextLine().split(";");
+
         for (String personData:peopleInput) {
             String[] personParts = personData.split("=");
             String name = personParts[0];
@@ -20,6 +21,11 @@ public class Main {
                 System.out.println(e.getMessage());
                 return;
             }
+        }
+
+        String[] productInput = sc.nextLine().split(";");
+        for (String productData:productInput) {
+
         }
     }
 }
