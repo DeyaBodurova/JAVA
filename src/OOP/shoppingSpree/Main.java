@@ -13,6 +13,12 @@ public class Main {
             String[] personParts = personData.split("=");
             String name = personParts[0];
             double money = Double.parseDouble(personParts[1]);
+            try {
+                Person person = new Person(name,money);
+
+            } catch (){
+
+            }
         }
     }
 }
