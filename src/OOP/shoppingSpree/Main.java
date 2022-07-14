@@ -8,5 +8,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         Map<String,Person>people = new LinkedHashMap<>();
         Map<String,Person>products = new LinkedHashMap<>();
+        String [] peopleInput = sc.nextLine().split(";");
+
     }
 }
