@@ -11,7 +11,8 @@ public class Main {
         String [] peopleInput = sc.nextLine().split(";");
         for (String personData:peopleInput) {
             String[] personParts = personData.split("=");
-            String name = personData[0];
+            String name = personParts[0];
+            double money = Double.parseDouble(personParts[1]);
         }
     }
 }
