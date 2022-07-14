@@ -17,7 +17,8 @@ public class Main {
                 Person person = new Person(name,money);
                 people.put(name, person);
             } catch (IllegalArgumentException e){
-                System.out.println();
+                System.out.println(e.getMessage());
+                return;
             }
         }
     }
