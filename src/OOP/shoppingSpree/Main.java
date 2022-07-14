@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Map<String,Person>people = new LinkedHashMap<>();
+        Map<String,Person> people = new LinkedHashMap<>();
         Map<String,Person>products = new LinkedHashMap<>();
         String [] peopleInput = sc.nextLine().split(";");
         for (String personData:peopleInput) {
@@ -15,7 +15,6 @@ public class Main {
             double money = Double.parseDouble(personParts[1]);
             try {
                 Person person = new Person(name,money);
-                people.add(person);
             } catch (IllegalAccessException){
 
             }
