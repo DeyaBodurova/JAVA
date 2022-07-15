@@ -50,9 +50,11 @@ public class Main {
             try {
                 beyer.buyProduct(productToBye);
                 System.out.printf("%s bought %s%n", personName, productName);
-            } catch (IllegalArgumentException e) {}
-
+            } catch (IllegalArgumentException e) {
+                System.out.println(e.getMessage());
+            }
             command = sc.nextLine();
         }
+        people.values().forEach(System.out::println);
     }
 }
