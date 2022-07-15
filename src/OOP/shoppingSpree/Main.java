@@ -39,6 +39,10 @@ public class Main {
         }
 
         String command = sc.nextLine();
-        while() {}
+        while(command.equals("End")) {
+
+
+            command = sc.nextLine();
+        }
     }
 }
