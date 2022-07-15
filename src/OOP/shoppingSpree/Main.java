@@ -25,7 +25,8 @@ public class Main {
 
         String[] productInput = sc.nextLine().split(";");
         for (String productData:productInput) {
-
+            String[] productParts = sc.nextLine().split("=");
+            String name = productParts[0];
         }
     }
 }
