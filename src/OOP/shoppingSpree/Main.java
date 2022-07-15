@@ -30,7 +30,7 @@ public class Main {
             double cost = Double.parseDouble(productParts[1]);
 
             try {
-
+                Product product = new Product(name,cost);
             } catch (IllegalArgumentException e) {
 
             }
