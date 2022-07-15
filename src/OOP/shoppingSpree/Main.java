@@ -44,6 +44,13 @@ public class Main {
             String personName = commandParts[0];
             String productName = commandParts[1];
 
+            Person beyer = people.get(personName);
+            Product productToBye = products.get(productName);
+
+            try {
+
+            } catch (IllegalArgumentException e) {}
+
             command = sc.nextLine();
         }
     }
