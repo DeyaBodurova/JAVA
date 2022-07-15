@@ -34,6 +34,7 @@ public class Main {
                 products.put(name, product);
             } catch (IllegalArgumentException e) {
                 System.out.println(e.getMessage());
+                return;
             }
         }
     }
