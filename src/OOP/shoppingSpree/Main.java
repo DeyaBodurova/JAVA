@@ -31,6 +31,7 @@ public class Main {
 
             try {
                 Product product = new Product(name,cost);
+                products.put(name, products);
             } catch (IllegalArgumentException e) {
 
             }
