@@ -27,6 +27,8 @@ public class Main {
         for (String productData:productInput) {
             String[] productParts = sc.nextLine().split("=");
             String name = productParts[0];
+            double cost = Double.parseDouble(productParts[1]);
+
         }
     }
 }
