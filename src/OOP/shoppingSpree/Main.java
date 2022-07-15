@@ -40,7 +40,9 @@ public class Main {
 
         String command = sc.nextLine();
         while(command.equals("End")) {
-
+            String[] commandParts = sc.nextLine().split("\\s+");
+            String personName = commandParts[0];
+            String productName = commandParts[1];
 
             command = sc.nextLine();
         }
