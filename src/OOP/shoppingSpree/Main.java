@@ -48,7 +48,8 @@ public class Main {
             Product productToBye = products.get(productName);
 
             try {
-
+                beyer.buyProduct(productToBye);
+                System.out.printf("%s bought %s%n", personName, productName);
             } catch (IllegalArgumentException e) {}
 
             command = sc.nextLine();
