@@ -29,6 +29,11 @@ public class Main {
             String name = productParts[0];
             double cost = Double.parseDouble(productParts[1]);
 
+            try {
+
+            } catch (IllegalArgumentException e) {
+
+            }
         }
     }
 }
