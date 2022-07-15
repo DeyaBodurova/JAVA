@@ -36,7 +36,9 @@ public class Main {
                 System.out.println(e.getMessage());
                 return;
             }
-
         }
+
+        String command = sc.nextLine();
+        while() {}
     }
 }
