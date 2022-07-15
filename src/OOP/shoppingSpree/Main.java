@@ -33,7 +33,7 @@ public class Main {
                 Product product = new Product(name,cost);
                 products.put(name, product);
             } catch (IllegalArgumentException e) {
-
+                System.out.println(e.getMessage());
             }
         }
     }
