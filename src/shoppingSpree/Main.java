@@ -46,7 +46,7 @@ public class Main {
             Product productToBuy = products.get(productsData[1]);
             try {
                 buyer.buyProduct(productToBuy);
-                System.out.printf("%s bought %s%n", buyer.getName(), productToBuy.getName());
+                System.out.printf("%s bought %s%n", peopleData[0], purchaseData[1]);
             } catch (IllegalArgumentException e) {
                 System.out.println(e.getMessage());
             }
