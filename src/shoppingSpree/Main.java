@@ -16,8 +16,13 @@ public class Main {
             String[] currentPerson = peopleData[i].split("=");
             String currentPersonName = currentPerson[0];
             double currentPersonMoney = Double.parseDouble(currentPerson[1]);
-            Person person = new Person(currentPersonName,currentPersonMoney);
-            people.put(currentPersonName, person);
+            try {
+                Person person = new Person(currentPersonName, currentPersonMoney);
+                people.put(currentPersonName, person);
+            } catch (IllegalArgumentException e) {
+                System.out.println(e.getMessage());
+                return;
+            }
         }
 
         String[] productsData = sc.nextLine().split(";");
@@ -25,8 +30,13 @@ public class Main {
             String[] currentProduct = productsData[i].split("=");
             String currentProductName = currentProduct[0];
             double currentProductCost = Double.parseDouble(currentProduct[1]);
-            Product product = new Product(currentProductName,currentProductCost);
-            products.put(currentProductName,product);
+            try {
+                Product product = new Product(currentProductName, currentProductCost);
+                products.put(currentProductName, product);
+            } catch (IllegalArgumentException e) {
+                System.out.println(e.getMessage());
+                return;
+            }
         }
 
         String input = sc.nextLine();
