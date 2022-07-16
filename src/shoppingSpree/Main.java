@@ -15,7 +15,7 @@ public class Main {
             String[] currentPerson = peopleData[i].split("=");
             String currentPersonName = currentPerson[0];
             double currentPersonMoney = Double.parseDouble(currentPerson[1]);
-            Person person = new Person(currentPersonName,currentPersonMoney)
+            Person person = new Person(currentPersonName,currentPersonMoney);
             people.put(currentPersonName, person);
         }
 
@@ -33,7 +33,14 @@ public class Main {
             String[] purchaseData = input.split(" ");
             Person buyer = people.get(purchaseData[0]);
             Product productToBuy = products.get(productsData[1]);
+            try {
+                buyer.buyProduct(productToBuy);
+                System.out.printf("%s bought %s%n", buyer.getName(), productToBuy.getName());
+            } catch (IllegalArgumentException e) {
+                System.out.println(e.getMessage());
+            }
             input = sc.nextLine();
         }
+        people.values().forEach(System.out::println);
     }
 }

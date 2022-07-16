@@ -1,6 +1,7 @@
 package shoppingSpree;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Person {
     private String name;
@@ -29,10 +30,31 @@ public class Person {
     }
 
     public void buyProduct(Product product) {
-
+        if(money < product.getCost()) {
+            throw new IllegalArgumentException(String.format("%s can't afford %s", name, product.getName()));
+        }
+        products.add(product);
+        money -= product.getCost();
     }
 
     public String getName() {
         return name;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(name + " - ");
+
+        String productData = products
+                .stream()
+                .map(Product::getName)
+                .collect(Collectors.joining(", "));
+        if(productData.isEmpty()) {
+            sb.append("Nothing bought.");
+        } else {
+            sb.append(productData);
+        }
+        return sb.toString();
     }
 }
