@@ -54,7 +54,6 @@ public class Main {
                 System.out.println(e.getMessage());
             }
             command = sc.nextLine();
-
         }
         people.values().forEach(System.out::println);
     }
