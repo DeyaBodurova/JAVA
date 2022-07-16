@@ -8,7 +8,8 @@ public class Person {
     private List<Product> products;
 
     public Person(String name, double money) {
-
+        setName(name);
+        setMoney(money);
     }
 
     private void setName(String name) {
@@ -23,7 +24,7 @@ public class Person {
 
     }
 
-+
-
-    getName():String
+    public String getName() {
+        return name;
+    }
 }
