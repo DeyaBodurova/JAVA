@@ -40,7 +40,7 @@ public class Main {
         }
 
         String input = sc.nextLine();
-        while(!input.equalsIgnoreCase("END")) {
+        while(!input.equals("END")) {
             String[] purchaseData = input.split(" ");
             Person buyer = people.get(purchaseData[0]);
             Product productToBuy = products.get(productsData[1]);
