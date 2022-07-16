@@ -17,6 +17,15 @@ public class Main {
             double currentPersonMoney = Double.parseDouble(currentPerson[1]);
             people.put(currentPersonName,currentPersonMoney);
         }
-        System.out.println();
+
+        String[] productsData = sc.nextLine().split(";");
+        for (int i = 0; i < productsData.length; i++) {
+            String[] currentProduct = productsData[i].split("=");
+            String currentProductName = currentProduct[0];
+            double currentProductCost = Double.parseDouble(currentProduct[1]);
+            products.put(currentProductName,currentProductCost);
+        }
+
+
     }
 }
