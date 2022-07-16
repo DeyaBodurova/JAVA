@@ -15,7 +15,7 @@ public class Person {
 
     private void setName(String name) {
         if(name!= null || !(name.trim().isEmpty())) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("Name cannot be empty");
         } else {
             this.name = name;
         }
@@ -23,7 +23,7 @@ public class Person {
 
     private void setMoney(double money) {
         if(money > 0) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("Money cannot be negative");
         } else {
             this.money = money;
         }
