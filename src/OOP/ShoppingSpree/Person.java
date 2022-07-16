@@ -1,4 +1,4 @@
-package OOP.shoppingSpree;
+package OOP.ShoppingSpree;
 
 import java.util.List;
 
