@@ -11,7 +11,7 @@ public class Product {
 
     private void setCost(double cost) {
         if(cost > 0) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("Money cannot be negative");
         } else {
             this.cost = cost;
         }
@@ -19,7 +19,7 @@ public class Product {
 
     private void setName(String name) {
         if(name != null || !(name.trim().isEmpty())) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("Name cannot be empty");
         } else {
             this.name = name;
         }
