@@ -26,6 +26,14 @@ public class Main {
             products.put(currentProductName,currentProductCost);
         }
 
+        String input = sc.nextLine();
+        while(!input.equalsIgnoreCase("END")) {
+            String[] purchaseData = input.split("\\s+");
+            String currentPersonName = purchaseData[0];
 
+            Person buyer = people.get(purchaseData[0]);
+            Product productToBuy = products.get(productsData[1]);
+            input = sc.nextLine();
+        }
     }
 }
