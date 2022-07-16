@@ -13,7 +13,11 @@ public class Person {
     }
 
     private void setName(String name) {
-
+        if(name!= null || !(name.trim().isEmpty())) {
+            throw new IllegalArgumentException();
+        } else {
+            this.name = name;
+        }
     }
 
     private void setMoney(double money) {
