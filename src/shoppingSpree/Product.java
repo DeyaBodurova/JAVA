@@ -5,7 +5,8 @@ public class Product {
     private double cost;
 
     public Product(String name, double cost) {
-
+        setName(name);
+        setCost(cost);
     }
 
     private void setCost(double cost) {
@@ -24,11 +25,11 @@ public class Product {
         }
     }
 
-+
+    public String getName() {
+        return name;
+    }
 
-    getName():String
-
-+
-
-    getCost():double
+    public double getCost() {
+        return cost;
+    }
 }
