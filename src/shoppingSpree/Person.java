@@ -21,7 +21,11 @@ public class Person {
     }
 
     private void setMoney(double money) {
-
+        if(money > 0) {
+            throw new IllegalArgumentException();
+        } else {
+            this.money = money;
+        }
     }
 
     public void buyProduct(Product product) {
