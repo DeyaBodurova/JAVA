@@ -7,15 +7,16 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Map<String, Double> people = new LinkedHashMap<>();
-        Map<String, Double> products = new LinkedHashMap<>();
+        Map<String, Person> people = new LinkedHashMap<>();
+        Map<String, Product> products = new LinkedHashMap<>();
 
         String[] peopleData = sc.nextLine().split(";");
         for (int i = 0; i < peopleData.length; i++) {
             String[] currentPerson = peopleData[i].split("=");
             String currentPersonName = currentPerson[0];
             double currentPersonMoney = Double.parseDouble(currentPerson[1]);
-            people.put(currentPersonName,currentPersonMoney);
+            Person person = new Person(currentPersonName,currentPersonMoney)
+            people.put(currentPersonName, person);
         }
 
         String[] productsData = sc.nextLine().split(";");
@@ -23,14 +24,13 @@ public class Main {
             String[] currentProduct = productsData[i].split("=");
             String currentProductName = currentProduct[0];
             double currentProductCost = Double.parseDouble(currentProduct[1]);
-            products.put(currentProductName,currentProductCost);
+            Product product = new Product(currentProductName,currentProductCost);
+            products.put(currentProductName,product);
         }
 
         String input = sc.nextLine();
         while(!input.equalsIgnoreCase("END")) {
-            String[] purchaseData = input.split("\\s+");
-            String currentPersonName = purchaseData[0];
-
+            String[] purchaseData = input.split(" ");
             Person buyer = people.get(purchaseData[0]);
             Product productToBuy = products.get(productsData[1]);
             input = sc.nextLine();
