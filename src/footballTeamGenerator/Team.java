@@ -4,15 +4,27 @@ public class Team {
     private String name;
     private List<Player> players;
 
-+ Team (String)
+    public Team(String name) {
+        setName(name);
+    }
 
-- setName(String) : void
+    private void setName(String name) {
+        this.name = name;
+    }
 
-+ getName(): String
+    public String getName() {
+        return name;
+    }
 
-+ addPlayer(Player) : void
+    public void addPlayer(Player player) {
 
-+ removePlayer(String) : void
+    }
 
-+ getRating() : double
+    public void removePlayer(String player) {
+
+    }
+
+    public double getRating() {
+
+    }
 }

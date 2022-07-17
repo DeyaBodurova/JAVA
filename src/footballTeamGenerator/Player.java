@@ -9,7 +9,12 @@ public class Player {
     private int shooting;
 
     public Player(String name, int endurance, int sprint, int dribble, int passing, int shooting) {
-
+        setName(name);
+        setEndurance(endurance);
+        setSprint(sprint);
+        setDribble(dribble);
+        setPassing(passing);
+        setShooting(shooting);
     }
 
     private void setName(String name) {
