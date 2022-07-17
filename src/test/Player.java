@@ -24,7 +24,7 @@ public class Player {
         setShooting(shooting);
     }
 
-    public double overallSkillLevel(){
+    public double overallSkillLevel() {
         return (endurance + sprint + dribble + passing + shooting) / 5.0;
     }
 
@@ -33,7 +33,7 @@ public class Player {
     }
 
     private void setName(String name) {
-        if(name == null || name.trim().isEmpty()){
+        if (name == null || name.trim().isEmpty()) {
             throw new IllegalArgumentException("A name should not be empty.");
         }
         this.name = name;
@@ -64,8 +64,8 @@ public class Player {
         this.shooting = shooting;
     }
 
-    private void checkStat(int stat, String statName){
-        if(stat < 0 || stat > 100){
+    private void checkStat(int stat, String statName) {
+        if (stat < 0 || stat > 100) {
             throw new IllegalArgumentException(statName + " should be between 0 and 100.");
         }
     }
