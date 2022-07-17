@@ -13,7 +13,7 @@ public class Team {
     }
 
     private void setName(String name) {
-        if(name == null || name.trim().isEmpty()) {
+        if (name == null || name.trim().isEmpty()) {
             throw new IllegalArgumentException("A name should not be empty.");
         }
         this.name = name;
