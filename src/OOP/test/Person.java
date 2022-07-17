@@ -1,5 +1,7 @@
 package OOP.test;
 
+import java.util.stream.Collectors;
+
 public class Person {
     private String name;
     private double money;
