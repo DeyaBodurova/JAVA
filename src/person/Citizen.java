@@ -3,10 +3,22 @@ package person;
 public class Citizen implements Person,Birthable,Identifiable {
     private String name;
     private int age;
+    private String id;
+    private String birthDay;
 
-    public Citizen(String name, int age) {
+    public void setBirthDay(String birthDay) {
+        this.birthDay = birthDay;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public Citizen(String name, int age, String id, String birthDay) {
         setName(name);
         setAge(age);
+        setId(id);
+        setBirthDay(birthDay);
     }
 
     @Override
@@ -29,11 +41,11 @@ public class Citizen implements Person,Birthable,Identifiable {
 
     @Override
     public String getBirthDay() {
-        return null;
+        return birthDay;
     }
 
     @Override
     public String getId() {
-        return null;
+        return id;
     }
 }
