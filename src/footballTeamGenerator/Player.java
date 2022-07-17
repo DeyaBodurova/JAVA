@@ -40,31 +40,31 @@ public class Player {
     }
 
     private void setEndurance(int endurance) {
-        checkStats(endurance, "Endurance");
+        checkStat(endurance, "Endurance");
         this.endurance = endurance;
     }
 
     private void setSprint(int sprint) {
-        checkStats(sprint, "Sprint");
+        checkStat(sprint, "Sprint");
         this.sprint = sprint;
     }
 
     private void setDribble(int dribble) {
-        checkStats(dribble, "Dribble");
+        checkStat(dribble, "Dribble");
         this.dribble = dribble;
     }
 
     private void setPassing(int passing) {
-        checkStats(passing, "Passing");
+        checkStat(passing, "Passing");
         this.passing = passing;
     }
 
     private void setShooting(int shooting) {
-        checkStats(shooting, "Shooting");
+        checkStat(shooting, "Shooting");
         this.shooting = shooting;
     }
 
-    private void checkStats(int stat, String statName) {
+    private void checkStat(int stat, String statName) {
         if (stat < 0 || stat > 100) {
             throw new IllegalArgumentException(statName + " should be between 0 and 100.");
         }
