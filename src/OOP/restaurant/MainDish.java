@@ -1,13 +1,13 @@
-package restaurant;
+package OOP.restaurant;
 
 import java.math.BigDecimal;
 
-public class Starter extends Food {
+public class MainDish extends Food{
     private String name;
     private BigDecimal price;
     private double grams;
 
-    public Starter(String name, BigDecimal price, double grams) {
+    public MainDish(String name, BigDecimal price, double grams) {
         super(name, price, grams);
     }
 }
