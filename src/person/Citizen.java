@@ -4,21 +4,21 @@ public class Citizen implements Person,Birthable,Identifiable {
     private String name;
     private int age;
     private String id;
-    private String birthDay;
+    private String birthDate;
 
-    public void setBirthDay(String birthDay) {
-        this.birthDay = birthDay;
+    public void setBirthDate(String birthDate) {
+        this.birthDate = birthDate;
     }
 
     public void setId(String id) {
         this.id = id;
     }
 
-    public Citizen(String name, int age, String id, String birthDay) {
+    public Citizen(String name, int age, String id, String birthDate) {
         setName(name);
         setAge(age);
         setId(id);
-        setBirthDay(birthDay);
+        setBirthDate(birthDate);
     }
 
     @Override
@@ -40,8 +40,8 @@ public class Citizen implements Person,Birthable,Identifiable {
     }
 
     @Override
-    public String getBirthDay() {
-        return birthDay;
+    public String getBirthDate() {
+        return birthDate;
     }
 
     @Override
