@@ -10,6 +10,11 @@ public class Topping {
     }
 
     private void setToppingType(String toppingType) {
+        if (toppingType == null || toppingType.trim().isEmpty() || ((!toppingType.equalsIgnoreCase("meat"))
+                && (!toppingType.equalsIgnoreCase("veggies")) && (!toppingType.equalsIgnoreCase("cheese"))
+                && (!toppingType.equalsIgnoreCase("sauce")))) {
+            throw new IllegalArgumentException(String.format("Cannot place %s on top of your pizza.", toppingType));
+        }
         this.toppingType = toppingType;
     }
 
