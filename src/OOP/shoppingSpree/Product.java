@@ -1,4 +1,4 @@
-package shoppingSpree;
+package OOP.shoppingSpree;
 
 public class Product {
     private String name;
