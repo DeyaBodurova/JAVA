@@ -1,4 +1,4 @@
-package pizzaCalories;
+package OOP.pizzaCalories;
 
 import java.util.Scanner;
 

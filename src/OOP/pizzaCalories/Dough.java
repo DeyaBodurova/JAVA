@@ -1,4 +1,4 @@
-package pizzaCalories;
+package OOP.pizzaCalories;
 
 public class Dough {
     private String flourType;
