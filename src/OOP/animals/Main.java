@@ -1,4 +1,4 @@
-package animals;
+package OOP.animals;
 
 import java.util.Scanner;
 
@@ -12,6 +12,7 @@ public class Main {
             String name = animalData[0];
             int age = Integer.parseInt(animalData[1]);
             String gender = animalData[2];
+            System.out.println(input);
             switch (input) {
                 case "Cat":
                     Cat cat = new Cat(name, age, gender);

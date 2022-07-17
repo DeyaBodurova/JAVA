@@ -1,4 +1,4 @@
-package animals;
+package OOP.animals;
 
 public class Animal {
     private String name;

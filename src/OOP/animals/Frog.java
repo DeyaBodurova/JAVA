@@ -1,4 +1,4 @@
-package animals;
+package OOP.animals;
 
 public class Frog extends Animal {
     public Frog(String name, int age, String gender) {
@@ -6,6 +6,6 @@ public class Frog extends Animal {
     }
 
     public String produceSound() {
-        return "Rabbit";
+        return "Ribbit";
     }
 }
