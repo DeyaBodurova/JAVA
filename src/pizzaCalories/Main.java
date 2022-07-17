@@ -7,7 +7,8 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         String[] pizzaData = sc.nextLine().split("\\s+");
         Pizza pizza = new Pizza(pizzaData[1], Integer.parseInt(pizzaData[2]));
-        String[] doughData =
-        Dough dough =  new Dough();
+        String[] doughData = sc.nextLine().split("\\s+");
+        Dough dough = new Dough(doughData[1], doughData[2], Double.parseDouble(doughData[3]));
+
     }
 }

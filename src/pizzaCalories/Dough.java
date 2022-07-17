@@ -20,8 +20,10 @@ public class Dough {
     }
 
     private void setBakingTechnique(String bakingTechnique) {
-        if (bakingTechnique == null || bakingTechnique.trim().isEmpty() || ((!bakingTechnique.equalsIgnoreCase("crispy"))
-                && (!bakingTechnique.equalsIgnoreCase("chewy")) && (!bakingTechnique.equalsIgnoreCase("homemade")))) {
+        if (bakingTechnique == null || bakingTechnique.trim().isEmpty() ||
+                ((!bakingTechnique.equalsIgnoreCase("crispy"))
+                        && (!bakingTechnique.equalsIgnoreCase("chewy"))
+                        && (!bakingTechnique.equalsIgnoreCase("homemade")))) {
             throw new IllegalArgumentException("Invalid type of dough.");
         }
         this.bakingTechnique = bakingTechnique;
