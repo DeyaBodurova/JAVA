@@ -1,22 +1,44 @@
 package pizzaCalories;
 
+import java.awt.*;
+import java.util.ArrayList;
+
 public class Pizza {
     private String name;
-    List <Dough> dought;
+    private Dough dought;
+    List<Topping> toppings;
 
-- toppings: List<Topping>
+    public Pizza(String name, int numberOfToppings) {
+        setName(name);
 
-+ Piza (String, int numberOfToppings)
+    }
 
-- setToppings(int) : void
+    private void setName(String name) {
+        this.name = name;
+    }
 
-- setName(String) : void
+    private void setToppings(int toppings) {
+    }
 
-+ setDough(Dough) : void
 
-+ getName(): String
++
 
-+ addTopping (Topping) : void
+    public void setDough(Dough dough) {
 
-+ getOverallCalories () : double
+    }
+
++
+
+    getName():String
+
++
+
+    public void addTopping(Topping topping) {
+
+    }
+
+    public double getOverallCalories() {
+
+    }
+
 }
