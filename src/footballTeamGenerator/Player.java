@@ -9,6 +9,13 @@ public class Player {
     private int shooting;
 
     public Player(String name, int endurance, int sprint, int dribble, int passing, int shooting) {
+        this.name = name;
+        this.endurance = endurance;
+        this.sprint = sprint;
+        this.dribble = dribble;
+        this.passing = passing;
+        this.shooting = shooting;
+
         setName(name);
         setEndurance(endurance);
         setSprint(sprint);
@@ -54,7 +61,7 @@ public class Player {
     }
 
     public double overallSkillLevel() {
-        return ((endurance * sprint * dribble * passing * shooting) / 5.0);
+        return (endurance * sprint * dribble * passing * shooting) / 5.0;
     }
 
     private void checkStats(int stat, String statName) {
