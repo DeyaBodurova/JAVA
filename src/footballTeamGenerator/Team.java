@@ -30,7 +30,8 @@ public class Team {
     public void removePlayer(String playerName) {
         boolean isRemoved = players.removeIf(p -> p.getName().equals(playerName));
         if (!isRemoved) {
-            throw new IllegalArgumentException(String.format("Player %s is not in %s team.", playerName, name));
+            String exceptionMessage = String.format("Player %s is not in %s team.", playerName, name);
+            throw new IllegalArgumentException(exceptionMessage);
         }
     }
 
