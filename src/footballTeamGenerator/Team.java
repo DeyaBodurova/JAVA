@@ -21,14 +21,14 @@ public class Team {
     }
 
     public void addPlayer(Player player) {
-
+        players.add(player);
     }
 
     public void removePlayer(String player) {
-
+            players.remove(player);
     }
 
     public double getRating() {
-
+        return players.stream().mapToDouble(Player::overallSkillLevel).average().orElse(0);
     }
 }
