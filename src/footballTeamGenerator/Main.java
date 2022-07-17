@@ -12,7 +12,7 @@ public class Main {
         String input = sc.nextLine();
         Map<String, Team> teams = new LinkedHashMap<>();
 
-        while (!input.equals("END")) {
+        while (!"END".equals(input)) {
             try {
                 String[] data = input.split(";");
                 String commandName = data[0];
@@ -32,7 +32,7 @@ public class Main {
                         int shooting = Integer.parseInt(data[7]);
 
                         if (!teams.containsKey(teamName)) {
-                            System.out.printf("Team %s does not exist.\n", teamName);
+                            System.out.printf("Team %s does not exist.%n", teamName);
                         } else {
                             Player player = new Player(playerName, endurance, sprint, dribble, passing, shooting);
                             teams.get(teamName).addPlayer(player);
