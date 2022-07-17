@@ -22,27 +22,27 @@ public class Player {
     }
 
     public String getName() {
-        this.name = name;
+        return name;
     }
 
     private void setEndurance(int endurance) {
-
+        this.endurance = endurance;
     }
 
     private void setSprint(int sprint) {
-
+        this.sprint = sprint;
     }
 
     private void setDribble(int dribble) {
-
+        this.dribble = dribble;
     }
 
     private void setPassing(int passing) {
-
+        this.passing = passing;
     }
 
     private void setShooting(int shooting) {
-
+        this.shooting = shooting;
     }
 
     public double overallSkillLevel() {
