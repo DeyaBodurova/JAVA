@@ -19,6 +19,9 @@ public class Topping {
     }
 
     private void setWeight(double weight) {
+        if (weight < 1 || weight > 50) {
+            throw new IllegalArgumentException(String.format("%s weight should be in the range [1..50].", toppingType));
+        }
         this.weight = weight;
     }
 
