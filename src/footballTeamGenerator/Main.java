@@ -7,16 +7,16 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        String input = sc.nextLine();
+        String input = scanner.nextLine();
         Map<String, Team> teams = new LinkedHashMap<>();
 
         while (!"END".equals(input)) {
             try {
-                String[] data = input.split(";");
-                String commandName = data[0];
-                String teamName = data[1];
+                String[] commandParts = input.split(";");
+                String commandName = commandParts[0];
+                String teamName = commandParts[1];
 
                 switch (commandName) {
                     case "Team":
@@ -24,12 +24,12 @@ public class Main {
                         teams.put(teamName, team);
                         break;
                     case "Add":
-                        String playerName = data[2];
-                        int endurance = Integer.parseInt(data[3]);
-                        int sprint = Integer.parseInt(data[4]);
-                        int dribble = Integer.parseInt(data[5]);
-                        int passing = Integer.parseInt(data[6]);
-                        int shooting = Integer.parseInt(data[7]);
+                        String playerName = commandParts[2];
+                        int endurance = Integer.parseInt(commandParts[3]);
+                        int sprint = Integer.parseInt(commandParts[4]);
+                        int dribble = Integer.parseInt(commandParts[5]);
+                        int passing = Integer.parseInt(commandParts[6]);
+                        int shooting = Integer.parseInt(commandParts[7]);
 
                         if (!teams.containsKey(teamName)) {
                             System.out.printf("Team %s does not exist.%n", teamName);
@@ -39,16 +39,16 @@ public class Main {
                         }
                         break;
                     case "Remove":
-                        String playerToRemove = data[2];
+                        String playerToRemove = commandParts[2];
                         if (!teams.containsKey(teamName)) {
-                            System.out.printf("Team %s does not exist.\n", teamName);
+                            System.out.printf("Team %s does not exist.%n", teamName);
                         } else {
                             teams.get(teamName).removePlayer(playerToRemove);
                         }
                         break;
                     case "Rating":
                         if (!teams.containsKey(teamName)) {
-                            System.out.printf("Team %s does not exist.\n", teamName);
+                            System.out.printf("Team %s does not exist.%n", teamName);
                         } else {
                             System.out.printf("%s - %d\n", teamName, Math.round(teams.get(teamName).getRating()));
                         }
@@ -57,7 +57,7 @@ public class Main {
             } catch (IllegalArgumentException e) {
                 System.out.println(e.getMessage());
             }
-            input = sc.nextLine();
+            input = scanner.nextLine();
         }
     }
 }

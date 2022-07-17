@@ -25,7 +25,7 @@ public class Player {
     }
 
     public double overallSkillLevel() {
-        return (endurance * sprint * dribble * passing * shooting) / 5.0;
+        return (endurance + sprint + dribble + passing + shooting) / 5.0;
     }
 
     public String getName() {
