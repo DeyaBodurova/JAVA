@@ -1,4 +1,4 @@
-package OOP.test;
+package test;
 
 public class Product {
     private String name;

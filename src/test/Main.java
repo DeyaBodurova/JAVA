@@ -1,4 +1,4 @@
-package OOP.test;
+package test;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;
