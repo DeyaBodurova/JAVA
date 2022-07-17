@@ -1,4 +1,4 @@
-package footballTeamGenerator;
+package OOP.footballTeamGenerator;
 
 public class Player {
     private String name;

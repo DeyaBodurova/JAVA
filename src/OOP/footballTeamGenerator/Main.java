@@ -1,4 +1,4 @@
-package footballTeamGenerator;
+package OOP.footballTeamGenerator;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
