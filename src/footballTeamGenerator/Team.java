@@ -27,11 +27,10 @@ public class Team {
         players.add(player);
     }
 
-    public void removePlayer(String player) {
-        if (players.contains(player)) {
-            players.remove(player);
-        } else {
-            throw new IllegalArgumentException(String.format("Player %s is not in %s team.", player, name));
+    public void removePlayer(String playerName) {
+        boolean isRemoved = players.removeIf(p -> p.getName().equals(playerName));
+        if (!isRemoved) {
+            throw new IllegalArgumentException(String.format("Player %s is not in %s team.", playerName, name));
         }
     }
 
