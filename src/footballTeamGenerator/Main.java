@@ -39,10 +39,11 @@ public class Main {
                         }
                         break;
                     case "Remove":
+                        String playerToRemove = data[2];
                         if (!teams.containsKey(teamName)) {
                             System.out.printf("Team %s does not exist.\n", teamName);
                         } else {
-                            teams.get(teamName).removePlayer(data[2]);
+                            teams.get(teamName).removePlayer(playerToRemove);
                         }
                         break;
                     case "Rating":
