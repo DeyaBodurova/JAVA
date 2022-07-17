@@ -24,8 +24,7 @@ public class Dough {
     }
 
 
+    public double calculateCalories() {
 
-+
-
-    calculateCalories():double
+    }
 }
