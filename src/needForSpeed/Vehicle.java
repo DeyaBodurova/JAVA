@@ -37,10 +37,10 @@ public class Vehicle {
     }
 
     public void drive(double kilometers) {
-
-// The drive method should have the functionality to reduce
-// the fuel based on the traveled kilometers and fuel consumption.
-// Keep in mind that you can drive the vehicle only if you have enough fuel to finish the driving.
+        double fuelNeeded = kilometers * fuelConsumption;
+        if (fuel >= fuelNeeded) {
+            fuel -= fuelNeeded;
+        }
     }
 
 }
