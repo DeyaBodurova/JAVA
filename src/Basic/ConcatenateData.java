@@ -9,8 +9,8 @@ public class ConcatenateData {
         String lastName = sc.nextLine();
         int age = Integer.parseInt(sc.nextLine());
         String city = sc.nextLine();
-        System.out.printf("You are %s %s, a %d-years old OOP.person from %s.", name, lastName, age, city);
+        System.out.printf("You are %s %s, a %d-years old OOP.OOP.OOP.OOP.person from %s.", name, lastName, age, city);
     }
 }
 //    Напишете програма, която прочита от конзолата име, фамилия, възраст и град
-//    и печата следното съобщение: "You are <firstName> <lastName>, a <age>-years old OOP.person from <town>."
+//    и печата следното съобщение: "You are <firstName> <lastName>, a <age>-years old OOP.OOP.OOP.OOP.person from <town>."

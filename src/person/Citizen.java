@@ -1,6 +1,6 @@
 package person;
 
-public class Citizen implements Person {
+public class Citizen implements Person,Birthable,Identifiable {
     private String name;
     private int age;
 
@@ -25,5 +25,15 @@ public class Citizen implements Person {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    @Override
+    public String getBirthDay() {
+        return null;
+    }
+
+    @Override
+    public String getId() {
+        return null;
     }
 }
