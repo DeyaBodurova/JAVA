@@ -6,10 +6,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
+
         String input = sc.nextLine();
         Map<String, Team> teams = new LinkedHashMap<>();
-        while (!input.equalsIgnoreCase("END")) {
+
+        while (!input.equals("END")) {
             String[] data = input.split(";");
             String commandName = data[0].toLowerCase();
             String teamName = data[1];
