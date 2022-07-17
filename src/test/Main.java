@@ -50,7 +50,7 @@ public class Main {
                         if (!teams.containsKey(teamName)) {
                             System.out.printf("Team %s does not exist.%n", teamName);
                         } else {
-                            System.out.printf("%s - %d%n", teamName, Math.round(teams.get(teamName).getRating()));
+                            System.out.printf("%s - %d\n", teamName, Math.round(teams.get(teamName).getRating()));
                         }
                         break;
                 }
