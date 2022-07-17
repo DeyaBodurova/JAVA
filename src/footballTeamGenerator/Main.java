@@ -25,7 +25,7 @@ public class Main {
                         break;
                     case "Add":
                         if (!teams.containsKey(teamName)) {
-                            String.format("Team %s does not exist.\n", teamName);
+                            System.out.println(String.format("Team %s does not exist.", teamName));
                         } else {
                             Player player = new Player(data[2], Integer.parseInt(data[3]), Integer.parseInt(data[4]),
                                     Integer.parseInt(data[5]), Integer.parseInt(data[6]), Integer.parseInt(data[7]));
@@ -34,14 +34,14 @@ public class Main {
                         break;
                     case "Remove":
                         if (!teams.containsKey(teamName)) {
-                            String.format("Team %s does not exist.\n", teamName);
+                            System.out.println(String.format("Team %s does not exist.", teamName));
                         } else {
                             teams.get(teamName).removePlayer(data[2]);
                         }
                         break;
                     case "Rating":
                         if (!teams.containsKey(teamName)) {
-                            String.format("Team %s does not exist.\n", teamName);
+                            System.out.println(String.format("Team %s does not exist.", teamName));
                         } else {
                             System.out.printf("%s - %d\n", teamName, Math.round(teams.get(teamName).getRating()));
                         }
