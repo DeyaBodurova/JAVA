@@ -3,6 +3,7 @@ package footballTeamGenerator;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.stream.Stream;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,6 +17,7 @@ public class Main {
             switch (commandName) {
                 case "team":
                     Team team = new Team(teamName);
+                    teams.put(teamName, team);
                     break;
                 case "add":
                     if (!teams.containsKey(teamName)) {
@@ -25,6 +27,18 @@ public class Main {
                                 Integer.parseInt(data[5]), Integer.parseInt(data[6]), Integer.parseInt(data[7]));
                         teams.get(teamName).addPlayer(player);
                     }
+                    break;
+                case "remove":
+                    Team teamCurrent = teams.get(teamName);
+                    if (!teams.containsKey(teamName)) {
+                        throw new IllegalArgumentException(String.format("Team %s does not exist.", teamName));
+                    } else {
+                        teams.get(teamName).removePlayer(data[2]);
+                    }
+                    break;
+                case "rating":
+                    Team teamCurrentRating = teams.get(teamName);
+                    teams.get(teamName).getRating();
                     break;
             }
 
