@@ -1,4 +1,4 @@
-package hero;
+package OOP.hero;
 
 public class Knight extends Hero {
     public Knight(String username, int level) {

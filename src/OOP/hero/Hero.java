@@ -1,4 +1,4 @@
-package hero;
+package OOP.hero;
 
 public class Hero {
     private String username;
