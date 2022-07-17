@@ -1,5 +1,6 @@
 package pizzaCalories;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Pizza {
@@ -9,6 +10,7 @@ public class Pizza {
 
     public Pizza(String name, int numberOfToppings) {
         setName(name);
+        setToppings(numberOfToppings);
     }
 
     public String getName() {
@@ -27,11 +29,11 @@ public class Pizza {
     }
 
     private void setToppings(int toppings) {
-
+        this.toppings = new ArrayList<>();
     }
 
     public void addTopping(Topping topping) {
-
+        toppings.add(topping);
     }
 
     public double getOverallCalories() {

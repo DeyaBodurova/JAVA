@@ -25,6 +25,32 @@ public class Dough {
 
 
     public double calculateCalories() {
+        return (2 * weight) * getFlourTypeModifier(flourType) * getBakingTechniqueModifier(bakingTechnique);
+    }
 
+    private double getBakingTechniqueModifier(String bakingTechnique) {
+        bakingTechnique = bakingTechnique.toLowerCase();
+        switch (bakingTechnique) {
+            case "crispy":
+                return 0.9;
+            case "chewy":
+                return 1.1;
+            case "homemade":
+                return 1.0;
+            default:
+                return 0;
+        }
+    }
+
+    private double getFlourTypeModifier(String flourType) {
+       flourType = flourType.toLowerCase();
+        switch (flourType) {
+            case "white":
+                return 1.5;
+            case "wholegrain":
+                return 1.0;
+            default:
+                return 0;
+        }
     }
 }
