@@ -14,16 +14,16 @@ public class Main {
 
         while (!input.equals("END")) {
             try {
-
                 String[] data = input.split(";");
                 String commandName = data[0].toLowerCase();
                 String teamName = data[1];
+
                 switch (commandName) {
-                    case "team":
+                    case "Team":
                         Team team = new Team(teamName);
                         teams.put(teamName, team);
                         break;
-                    case "add":
+                    case "Add":
                         if (!teams.containsKey(teamName)) {
                             String.format("Team %s does not exist.\n", teamName);
                         } else {
@@ -32,14 +32,14 @@ public class Main {
                             teams.get(teamName).addPlayer(player);
                         }
                         break;
-                    case "remove":
+                    case "Remove":
                         if (!teams.containsKey(teamName)) {
                             String.format("Team %s does not exist.\n", teamName);
                         } else {
                             teams.get(teamName).removePlayer(data[2]);
                         }
                         break;
-                    case "rating":
+                    case "Rating":
                         if (!teams.containsKey(teamName)) {
                             String.format("Team %s does not exist.\n", teamName);
                         } else {
