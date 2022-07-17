@@ -2,7 +2,7 @@ package restaurant;
 
 import java.math.BigDecimal;
 
-public class HotBeverage extends Beverages{
+public class HotBeverage extends Beverage {
     private String name;
     private BigDecimal price;
     private double milliliters;
