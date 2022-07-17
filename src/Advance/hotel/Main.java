@@ -10,13 +10,13 @@ public class Main {
 
         Person person = new Person("Mark", 11111, 41, "Sofia");
 
-//Print person
+//Print OOP.person
 
         System.out.println(person);
 
 //Person Mark: 11111, Age: 41, Hometown: Sofia
 
-//Add person
+//Add OOP.person
 
         hotel.add(person);
 
@@ -42,7 +42,7 @@ public class Main {
 
         hotel.add(fourthPerson);
 
-// Get person
+// Get OOP.person
 
         Person personForGet = hotel.getPerson("Lucy", "Birmingham");
 

@@ -1,4 +1,4 @@
-package person;
+package OOP.person;
 
 public class Child extends Person{
     public Child(String name, int age) {
