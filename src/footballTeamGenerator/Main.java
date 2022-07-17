@@ -15,7 +15,7 @@ public class Main {
         while (!input.equals("END")) {
             try {
                 String[] data = input.split(";");
-                String commandName = data[0].toLowerCase();
+                String commandName = data[0];
                 String teamName = data[1];
 
                 switch (commandName) {
