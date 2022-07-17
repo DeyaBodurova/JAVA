@@ -1,6 +1,6 @@
 package person;
 
-public class Citizen implements Person,Birthable,Identifiable {
+public class Citizen extends Creatures implements Person,Birthable,Identifiable {
     private String name;
     private int age;
     private String id;

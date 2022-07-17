@@ -1,27 +1,40 @@
 package person;
 
-import java.lang.reflect.Method;
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        Class[] citizenInterfaces = Citizen.class.getInterfaces();
-        if (Arrays.asList(citizenInterfaces).contains(Birthable.class)
-                && Arrays.asList(citizenInterfaces).contains(Identifiable.class)) {
-            Method[] methods = Birthable.class.getDeclaredMethods();
-            Method[] methods1 = Identifiable.class.getDeclaredMethods();
-            Scanner scanner = new Scanner(System.in);
-            String name = scanner.nextLine();
-            int age = Integer.parseInt(scanner.nextLine());
-            String id = scanner.nextLine();
-            String birthDate = scanner.nextLine();
-            Identifiable identifiable = new Citizen(name,age,id,birthDate);
-            Birthable birthable = new Citizen(name, age, id,birthDate);
-            System.out.println(methods.length);
-            System.out.println(methods[0].getReturnType().getSimpleName());
-            System.out.println(methods1.length);
-            System.out.println(methods1[0].getReturnType().getSimpleName());
+        Scanner sc = new Scanner(System.in);
+        String input = sc.nextLine();
+        List<Birthable> creatures = new ArrayList<>();
+
+        while (!input.equals("End")) {
+            String[] data = input.split("\\s+");
+            String type = data[0];
+            switch (type) {
+                case "Citizen":
+                    String[] dateData = data[4].split("/");
+                    int yearOfBirth = Integer.parseInt(dateData[2]);
+                    Citizen citizen = new Citizen(data[1], Integer.parseInt(data[2]), data[3], data[4]);
+                    creatures.add(citizen);
+                    break;
+                case "Pet":
+                    String[] dateDataOfPet = data[2].split("/");
+                    int yearOfBirthOfPet = Integer.parseInt(dateDataOfPet[2]);
+                    Pet pet = new Pet(data[1], data[2]);
+                    creaturesYearsOfBirth.put(yearOfBirthOfPet, pet);
+                    break;
+                case "Robot":
+                    Robot robot = new Robot(data[1], data[2]);
+                    break;
+            }
+            input = sc.nextLine();
         }
+        int year = Integer.parseInt(sc.nextLine());
+        if (creaturesYearsOfBirth.containsKey(year)) {
+            creaturesYearsOfBirth.entrySet().removeIf(c -> !c.getKey().equals(year));
+            creaturesYearsOfBirth.forEach(c -> c.);
+        }
+
     }
 }
