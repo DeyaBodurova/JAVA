@@ -1,4 +1,4 @@
-package zoo;
+package OOP.zoo;
 
 public class Lizard extends Reptile{
     public Lizard(String name) {
