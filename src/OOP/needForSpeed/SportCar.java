@@ -1,4 +1,4 @@
-package needForSpeed;
+package OOP.needForSpeed;
 
 public class SportCar extends Car{
     final static double DEFAULT_FUEL_CONSUMPTION = 10.0;
