@@ -9,6 +9,7 @@ public class Main {
         Pizza pizza = new Pizza(pizzaData[1], Integer.parseInt(pizzaData[2]));
         String[] doughData = sc.nextLine().split("\\s+");
         Dough dough = new Dough(doughData[1], doughData[2], Double.parseDouble(doughData[3]));
+        pizza.setDough(dough);
         String input = sc.nextLine();
         while (!input.equalsIgnoreCase("END")) {
             String[] toppingData = input.split("\\s+");
