@@ -20,13 +20,17 @@ public class Dough {
     }
 
     private void setBakingTechnique(String bakingTechnique) {
-        if () {
+        if (bakingTechnique == null || bakingTechnique.trim().isEmpty() || ((!bakingTechnique.equalsIgnoreCase("crispy"))
+                && (!bakingTechnique.equalsIgnoreCase("chewy")) && (!bakingTechnique.equalsIgnoreCase("homemade")))) {
             throw new IllegalArgumentException("Invalid type of dough.");
         }
         this.bakingTechnique = bakingTechnique;
     }
 
     private void setWeight(double weight) {
+        if (weight < 1 || weight > 200) {
+            throw new IllegalArgumentException("Dough weight should be in the range [1..200].");
+        }
         this.weight = weight;
     }
 
