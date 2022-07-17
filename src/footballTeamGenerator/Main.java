@@ -1,4 +1,5 @@
 package footballTeamGenerator;
+
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -19,7 +20,7 @@ public class Main {
                     break;
                 case "add":
                     if (!teams.containsKey(teamName)) {
-                       String.format("Team %s does not exist.\n", teamName);
+                        String.format("Team %s does not exist.\n", teamName);
                     } else {
                         Player player = new Player(data[2], Integer.parseInt(data[3]), Integer.parseInt(data[4]),
                                 Integer.parseInt(data[5]), Integer.parseInt(data[6]), Integer.parseInt(data[7]));
