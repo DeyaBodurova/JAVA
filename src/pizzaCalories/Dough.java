@@ -12,7 +12,7 @@ public class Dough {
     }
 
     private void setFlourType(String flourType) {
-        if(flourType == null || flourType.trim().isEmpty() || ((!flourType.equalsIgnoreCase("white"))
+        if (flourType == null || flourType.trim().isEmpty() || ((!flourType.equalsIgnoreCase("white"))
                 && (!flourType.equalsIgnoreCase("wholegrain")))) {
             throw new IllegalArgumentException("Invalid type of dough.");
         }
@@ -20,6 +20,9 @@ public class Dough {
     }
 
     private void setBakingTechnique(String bakingTechnique) {
+        if () {
+            throw new IllegalArgumentException("Invalid type of dough.");
+        }
         this.bakingTechnique = bakingTechnique;
     }
 
@@ -47,7 +50,7 @@ public class Dough {
     }
 
     private double getFlourTypeModifier(String flourType) {
-       flourType = flourType.toLowerCase();
+        flourType = flourType.toLowerCase();
         switch (flourType) {
             case "white":
                 return 1.5;
