@@ -37,7 +37,7 @@ public class Pizza {
     }
 
     public double getOverallCalories() {
-
+        return dough.calculateCalories() + toppings.stream().mapToDouble(topping -> topping.calculateCalories()).sum()
     }
 
 }

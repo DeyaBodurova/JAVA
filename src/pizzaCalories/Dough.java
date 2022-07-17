@@ -12,6 +12,10 @@ public class Dough {
     }
 
     private void setFlourType(String flourType) {
+        if(flourType == null || flourType.trim().isEmpty() || ((!flourType.equalsIgnoreCase("white"))
+                && (!flourType.equalsIgnoreCase("wholegrain")))) {
+            throw new IllegalArgumentException("Invalid type of dough.");
+        }
         this.flourType = flourType;
     }
 
