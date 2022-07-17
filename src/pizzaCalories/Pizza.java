@@ -18,8 +18,8 @@ public class Pizza {
     }
 
     private void setName(String name) {
-        if (name == null || name.trim().isEmpty()) {
-            throw new IllegalArgumentException();
+        if (name == null || name.trim().isEmpty() || (name.length() > 15)) {
+            throw new IllegalArgumentException("Pizza name should be between 1 and 15 symbols.");
         }
         this.name = name;
     }
@@ -28,7 +28,10 @@ public class Pizza {
         this.dough = dough;
     }
 
-    private void setToppings(int toppings) {
+    private void setToppings(int toppingsCount) {
+        if(toppingsCount < 0 || toppingsCount > 10) {
+            throw new IllegalArgumentException("Number of toppings should be in range [0..10].");
+        }
         this.toppings = new ArrayList<>();
     }
 
@@ -37,7 +40,7 @@ public class Pizza {
     }
 
     public double getOverallCalories() {
-        return dough.calculateCalories() + toppings.stream().mapToDouble(topping -> topping.calculateCalories()).sum()
+        return dough.calculateCalories() + toppings.stream().mapToDouble(topping -> topping.calculateCalories()).sum();
     }
 
 }
