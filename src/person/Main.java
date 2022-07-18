@@ -31,7 +31,6 @@ public class Main {
             if (birthable.getBirthDate().endsWith(year)) {
                 System.out.println(birthable.getBirthDate());
             }
-
         }
     }
 }
