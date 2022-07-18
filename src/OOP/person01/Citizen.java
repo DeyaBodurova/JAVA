@@ -1,4 +1,4 @@
-package person;
+package OOP.person01;
 
 public class Citizen extends Creatures implements Person,Birthable,Identifiable {
     private String name;

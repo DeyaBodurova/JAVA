@@ -1,4 +1,4 @@
-package person;
+package OOP.person01;
 
 public class Robot implements Identifiable{
     private String id;

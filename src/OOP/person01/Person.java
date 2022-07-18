@@ -1,4 +1,4 @@
-package person;
+package OOP.person01;
 
 public interface Person {
     String getName();

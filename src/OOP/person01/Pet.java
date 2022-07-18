@@ -1,4 +1,4 @@
-package person;
+package OOP.person01;
 
 public class Pet extends Creatures implements Birthable{
     private String name;
