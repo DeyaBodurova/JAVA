@@ -1,6 +1,6 @@
 package foodShortage;
 
-public class Rebel {
+public class Rebel implements Buyer {
     private String name;
     private  int age;
     private String group;

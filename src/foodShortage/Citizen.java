@@ -1,6 +1,6 @@
 package foodShortage;
 
-public class Citizen {
+public class Citizen implements Buyer {
     private String name;
     private int age;
     private String id;
