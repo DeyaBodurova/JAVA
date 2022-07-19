@@ -1,4 +1,4 @@
-package foodStorage;
+package foodShortage;
 
 public class Rebel {
     private String name;

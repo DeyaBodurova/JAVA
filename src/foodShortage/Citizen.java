@@ -1,4 +1,4 @@
-package foodStorage;
+package foodShortage;
 
 public class Citizen {
     private String name;
