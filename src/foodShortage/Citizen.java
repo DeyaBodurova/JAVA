@@ -11,24 +11,24 @@ public class Citizen implements Buyer, Person, Identifiable {
 
     }
 
-public String getName() {
-
-}
-
-public int getAge() {
-
-}
-
-public String getId() {
-
-}
-
-public int getFood() {
+    public String getName() {
 
     }
 
-public void buyFood() {
+    public int getAge() {
 
-}
+    }
+
+    public String getId() {
+
+    }
+
+    public int getFood() {
+
+    }
+
+    public void buyFood() {
+
+    }
 
 }
