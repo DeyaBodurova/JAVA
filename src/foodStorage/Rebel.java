@@ -10,13 +10,23 @@ public Rebel(String name, int age, String group) {
 
 }
 
-+ getName(): String
+public String getName() {
 
-+ getAge(): int
+}
 
-+ getGroup(): String
+public int getAge() {
 
-+ getFood(): int
+}
 
-+ buyFood(): void
+public String  getGroup() {
+
+}
+
+public int getFood() {
+
+}
+
+public void buyFood() {
+
+}
 }
