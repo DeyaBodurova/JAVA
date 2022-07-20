@@ -29,6 +29,6 @@ return  food;
 
     @Override
     public void buyFood() {
-
+food+=5;
     }
 }

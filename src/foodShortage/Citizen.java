@@ -12,7 +12,7 @@ public class Citizen implements Buyer, Person, Identifiable {
     }
 
     public String getName() {
-
+return  name;
     }
 
     public int getAge() {
