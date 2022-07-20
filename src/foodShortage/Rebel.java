@@ -7,7 +7,9 @@ public class Rebel implements Buyer, Person {
     private int food;
 
     public Rebel(String name, int age, String group) {
-
+this.name = name;
+this.age=age;
+this.group=group;
     }
 
     public String getName() {
