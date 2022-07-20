@@ -28,7 +28,7 @@ return food;
     }
 
     public void buyFood() {
-
+food+=10;
     }
 
 }
