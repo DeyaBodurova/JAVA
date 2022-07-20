@@ -23,6 +23,7 @@ return  age;
 return  id;
     }
 
+    @Override
     public int getFood() {
 return food;
     }
