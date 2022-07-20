@@ -11,7 +11,7 @@ public class Rebel implements Buyer, Person {
     }
 
     public String getName() {
-
+return name;
     }
 
     public int getAge() {
