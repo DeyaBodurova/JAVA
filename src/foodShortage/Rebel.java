@@ -22,10 +22,12 @@ return  age;
 return  group;
     }
 
+@Override
     public int getFood() {
-
+return  food;
     }
 
+    @Override
     public void buyFood() {
 
     }
