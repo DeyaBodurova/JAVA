@@ -19,7 +19,7 @@ return  age;
     }
 
     public String getGroup() {
-
+return  group;
     }
 
     public int getFood() {
