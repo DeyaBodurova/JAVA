@@ -20,7 +20,7 @@ return  age;
     }
 
     public String getId() {
-
+return  id;
     }
 
     public int getFood() {
