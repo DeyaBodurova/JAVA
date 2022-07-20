@@ -28,6 +28,7 @@ return  id;
 return food;
     }
 
+    @Override
     public void buyFood() {
 food+=10;
     }
