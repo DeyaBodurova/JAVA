@@ -24,7 +24,7 @@ return  id;
     }
 
     public int getFood() {
-
+return food;
     }
 
     public void buyFood() {
