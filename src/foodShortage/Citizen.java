@@ -1,6 +1,6 @@
 package foodShortage;
 
-public class Citizen implements Buyer, Person, Identifiable {
+public class Citizen extends Creatures implements Buyer, Person, Identifiable {
     private String name;
     private int age;
     private String id;

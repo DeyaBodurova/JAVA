@@ -8,7 +8,12 @@ public class Main {
         int peopleCount = Integer.parseInt(sc.nextLine());
         while (peopleCount>0) {
             peopleCount--;
+            String[] data = sc.nextLine().split("\\s+");
+            if(data.length == 4) {
 
+            } else {
+
+            }
         }
 
     }
