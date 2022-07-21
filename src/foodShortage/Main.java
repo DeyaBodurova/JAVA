@@ -18,7 +18,7 @@ public class Main {
                 buyer.put(name, citizen);
             } else {
                 Rebel rabel = new Rebel(name,Integer.parseInt(data[1]),data[2]);
-
+                buyer.put(name, rabel);
             }
         }
 
