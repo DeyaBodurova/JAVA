@@ -8,27 +8,27 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int peopleCount = Integer.parseInt(sc.nextLine());
-        Map<String,Buyer> buyer = new LinkedHashMap<>();
+        Map<String, Buyer> buyers = new LinkedHashMap<>();
         while (peopleCount > 0) {
             peopleCount--;
             String[] data = sc.nextLine().split("\\s+");
             String name = data[0];
+            Buyer buyer;
             if (data.length == 4) {
-                Citizen citizen = new Citizen(name,Integer.parseInt(data[1]),data[2],data[3]);
-                buyer.put(name, citizen);
+                buyer = new Citizen(name);
             } else {
-                Rebel rabel = new Rebel(name,Integer.parseInt(data[1]),data[2]);
-                buyer.put(name, rabel);
+                buyer = new Rebel(name);
             }
+            buyers.put(name, buyer);
         }
         String input = sc.nextLine();
         while (!input.equals("End")) {
-            if(!buyer.containsKey(input)) {
+            if (!buyer.containsKey(input)) {
                 return;
             } else {
-
+                buyer = buyer.get(input);
             }
-            input=sc.nextLine();
+            input = sc.nextLine();
         }
     }
 }
