@@ -1,36 +1,36 @@
 package foodShortage;
 
-public class Rebel  extends Creatures implements Buyer, Person {
+public class Rebel extends Creatures implements Buyer, Person {
     private String name;
     private int age;
     private String group;
     private int food;
 
     public Rebel(String name, int age, String group) {
-this.name = name;
-this.age=age;
-this.group=group;
+        this.name = name;
+        this.age = age;
+        this.group = group;
     }
 
     public String getName() {
-return name;
+        return name;
     }
 
     public int getAge() {
-return  age;
+        return age;
     }
 
     public String getGroup() {
-return  group;
+        return group;
     }
 
-@Override
+    @Override
     public int getFood() {
-return  food;
+        return food;
     }
 
     @Override
     public void buyFood() {
-food+=5;
+        food += 5;
     }
 }
