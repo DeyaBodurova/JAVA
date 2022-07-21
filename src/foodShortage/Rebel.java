@@ -12,6 +12,11 @@ public class Rebel implements Buyer, Person {
         this.group = group;
     }
 
+    public Rebel(String name) {
+        this.name = name;
+        this.food = 0;
+    }
+
     public String getName() {
         return name;
     }
