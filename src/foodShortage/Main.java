@@ -23,8 +23,11 @@ public class Main {
         }
         String input = sc.nextLine();
         while (!input.equals("End")) {
+            if(!buyer.containsKey(input)) {
+                return;
+            } else {
 
-
+            }
             input=sc.nextLine();
         }
     }
