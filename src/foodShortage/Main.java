@@ -13,8 +13,9 @@ public class Main {
             peopleCount--;
             String[] data = sc.nextLine().split("\\s+");
             if (data.length == 4) {
-
+                Citizen citizen = new Citizen(data[0],Integer.parseInt(data[1]),data[2],data[3]);
             } else {
+                Rebel rabel = new Rebel(data[0],data[1],data[2]);
 
             }
         }
