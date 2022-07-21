@@ -15,7 +15,7 @@ public class Main {
             String name = data[0];
             if (data.length == 4) {
                 Citizen citizen = new Citizen(name,Integer.parseInt(data[1]),data[2],data[3]);
-                buyer.put()
+                buyer.put(name, citizen);
             } else {
                 Rebel rabel = new Rebel(name,Integer.parseInt(data[1]),data[2]);
 
