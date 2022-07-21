@@ -21,6 +21,11 @@ public class Main {
                 buyer.put(name, rabel);
             }
         }
+        String input = sc.nextLine();
+        while (!input.equals("End")) {
 
+
+            input=sc.nextLine();
+        }
     }
 }
