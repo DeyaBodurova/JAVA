@@ -14,6 +14,11 @@ public class Citizen implements Buyer, Person, Identifiable {
         this.birthDate = birthDate;
     }
 
+    public Citizen(String name) {
+        this.name = name;
+        this.food = 0;
+    }
+
     public String getName() {
         return name;
     }
