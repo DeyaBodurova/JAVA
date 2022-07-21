@@ -8,32 +8,32 @@ public class Citizen extends Creatures implements Buyer, Person, Identifiable {
     private int food;
 
     public Citizen(String name, int age, String id, String birthDate) {
-    this.name=name;
-    this.age=age;
-    this.id=id;
-    this.birthDate=birthDate;
+        this.name = name;
+        this.age = age;
+        this.id = id;
+        this.birthDate = birthDate;
     }
 
     public String getName() {
-return  name;
+        return name;
     }
 
     public int getAge() {
-return  age;
+        return age;
     }
 
     public String getId() {
-return  id;
+        return id;
     }
 
     @Override
     public int getFood() {
-return food;
+        return food;
     }
 
     @Override
     public void buyFood() {
-food+=10;
+        food += 10;
     }
 
 }
