@@ -30,7 +30,7 @@ public class Main {
             }
             input = sc.nextLine();
         }
-        int totalFood = buyers.value().stream().mapToInt(Buyer::getFood).sum();
+        int totalFood = buyers.values().stream().mapToInt(Buyer::getFood).sum();
         System.out.println(totalFood);
     }
 }
