@@ -12,6 +12,8 @@ public class Main {
             System.out.println("Calling... " + number);
         }
         for (int i = 0; i < sites.length; i++) {
+            if (sites[i].contains()) {
+            }
             System.out.println("Browsing: " + site + "!");
         }
     }
