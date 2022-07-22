@@ -26,7 +26,7 @@ public class Main {
             if (!buyers.containsKey(input)) {
                 return;
             } else {
-              Buyer  buyer = buyer.get(input);
+              Buyer  buyer = buyers.get(input);
             }
             input = sc.nextLine();
         }
