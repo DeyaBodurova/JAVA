@@ -1,4 +1,4 @@
-package foodShortage;
+package OOP.foodShortage;
 
 public class Rebel implements Buyer, Person {
     private String name;

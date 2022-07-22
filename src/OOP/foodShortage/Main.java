@@ -1,4 +1,4 @@
-package foodShortage;
+package OOP.foodShortage;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

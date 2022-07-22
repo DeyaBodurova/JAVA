@@ -1,4 +1,4 @@
-package foodShortage;
+package OOP.foodShortage;
 
 public class Citizen implements Buyer, Person, Identifiable {
     private String name;

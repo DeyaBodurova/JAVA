@@ -1,4 +1,4 @@
-package foodShortage;
+package OOP.foodShortage;
 
 public interface Person {
     String getName();
