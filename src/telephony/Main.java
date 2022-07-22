@@ -11,6 +11,8 @@ public class Main {
         for (String number:numbers) {
             System.out.println("Calling... " + number);
         }
-
+        for (int i=0; i < sites.length; i++) {
+            System.out.println("Browsing: " + site + "!");
+        }
     }
 }
