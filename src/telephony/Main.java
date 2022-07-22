@@ -8,10 +8,10 @@ public class Main {
         String[] numbers = sc.nextLine().split("\\s+");
         String[] sites = sc.nextLine().split("\\s+");
 
-        for (String number:numbers) {
+        for (String number : numbers) {
             System.out.println("Calling... " + number);
         }
-        for (int i=0; i < sites.length; i++) {
+        for (int i = 0; i < sites.length; i++) {
             System.out.println("Browsing: " + site + "!");
         }
     }
