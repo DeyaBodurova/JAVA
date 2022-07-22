@@ -27,6 +27,7 @@ public class Main {
                 return;
             } else {
               Buyer  buyer = buyers.get(input);
+              buyer.getFood();
             }
             input = sc.nextLine();
         }
