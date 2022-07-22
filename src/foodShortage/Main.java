@@ -24,7 +24,7 @@ public class Main {
         String input = sc.nextLine();
         while (!input.equals("End")) {
             if (!buyers.containsKey(input)) {
-                return;
+                break;
             } else {
               Buyer  buyer = buyers.get(input);
               buyer.getFood();
