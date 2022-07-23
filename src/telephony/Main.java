@@ -10,9 +10,7 @@ public class Main {
         List<String> numbers = Arrays.stream(sc.nextLine().split("\\s+")).toList();
         List<String> sites = Arrays.stream(sc.nextLine().split("\\s+")).toList();
         Smartphone smartphone = new Smartphone(numbers,sites);
-        for (String number : numbers) {
-            System.out.println("Calling... " + number);
-        }
+        System.out.println(smartphone.call());
         for (int i = 0; i < sites.length; i++) {
             if (sites[i].contains()) {
             }

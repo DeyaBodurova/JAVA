@@ -36,6 +36,22 @@ public class Smartphone implements Callable, Browsable {
     }
 
     public String browsable() {
-        return null;
+        StringBuilder sb = new StringBuilder();
+        for (String url:urls) {
+            if (url.contains()) {
+
+            }
+            sb.append("Browsing: " + url + "!%n");
+        }
+        return sb.toString();
+    }
+
+    private boolean hasOnlyNumbers(String text) {
+        for (int i = 0; i < text.length(); i++) {
+            if(!Character.isDigit(text.charAt(i))) {
+                return false;
+            }
+        }
+        return true;
     }
 }
