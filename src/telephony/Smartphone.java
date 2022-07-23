@@ -29,26 +29,29 @@ public class Smartphone implements Callable, Browsable {
 
     public String call() {
         StringBuilder sb = new StringBuilder();
-        for (String number:numbers) {
-            sb.append("Calling... ").append(number).append("%n");
+        for (String number : numbers) {
+            if (hasOnlyNumbers(number)) {
+                sb.append("Calling... ").append(number).append(System.lineSeparator());
+            } else {
+                sb.append("Invalid number!").append(System.lineSeparator());
+            }
         }
         return sb.toString();
     }
 
     public String browsable() {
         StringBuilder sb = new StringBuilder();
-        for (String url:urls) {
-            if (url.contains()) {
-
+        for (String url : urls) {
+            if (!hasOnlyNumbers(url)) {
+                return;
             }
             sb.append("Browsing: " + url + "!%n");
         }
-        return sb.toString();
     }
 
     private boolean hasOnlyNumbers(String text) {
         for (int i = 0; i < text.length(); i++) {
-            if(!Character.isDigit(text.charAt(i))) {
+            if (!Character.isDigit(text.charAt(i))) {
                 return false;
             }
         }
