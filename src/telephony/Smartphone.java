@@ -1,6 +1,5 @@
 package telephony;
 
-import javax.swing.plaf.synth.SynthLookAndFeel;
 import java.util.List;
 
 public class Smartphone implements Callable, Browsable {
@@ -12,17 +11,10 @@ public class Smartphone implements Callable, Browsable {
         setUrls(urls);
     }
 
-    public static List<String> getNumbers() {
-        return numbers;
-    }
-
     public static void setNumbers(List<String> numbers) {
         Smartphone.numbers = numbers;
     }
 
-    public static List<String> getUrls() {
-        return urls;
-    }
 
     public static void setUrls(List<String> urls) {
         Smartphone.urls = urls;
@@ -40,11 +32,11 @@ public class Smartphone implements Callable, Browsable {
         return sb.toString();
     }
 
-    public String browsable() {
+    public String browse() {
         StringBuilder sb2 = new StringBuilder();
         for (String url : urls) {
             if (!hasNumber(url)) {
-                sb2.append("Browsing: ").append(url).append(System.lineSeparator());
+                sb2.append("Browsing: ").append(url).append("!").append(System.lineSeparator());
             } else {
              sb2.append("Invalid URL!").append(System.lineSeparator());
             }

@@ -12,6 +12,6 @@ public class Main {
         List<String> sites = Arrays.stream(sc.nextLine().split("\\s+")).collect(Collectors.toList());
         Smartphone smartphone = new Smartphone(numbers,sites);
         System.out.println(smartphone.call());
-        System.out.println(smartphone.browsable());
+        System.out.println(smartphone.browse());
     }
 }
