@@ -28,7 +28,11 @@ public class Smartphone implements Callable, Browsable {
     }
 
     public String call() {
-        return null;
+        StringBuilder sb = new StringBuilder();
+        for (String number:numbers) {
+            sb.append("Calling... ").append(number).append("%n");
+        }
+        return sb.toString();
     }
 
     public String browsable() {
