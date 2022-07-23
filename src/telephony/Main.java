@@ -11,10 +11,6 @@ public class Main {
         List<String> sites = Arrays.stream(sc.nextLine().split("\\s+")).toList();
         Smartphone smartphone = new Smartphone(numbers,sites);
         System.out.println(smartphone.call());
-        for (int i = 0; i < sites.length; i++) {
-            if (sites[i].contains()) {
-            }
-            System.out.println("Browsing: " +  + "!");
-        }
+        System.out.println(smartphone.browsable());
     }
 }
