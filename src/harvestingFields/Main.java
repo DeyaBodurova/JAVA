@@ -8,5 +8,6 @@ public class Main {
     private static final Field[] RICH_SOIL_LAND_FIELDS = RichSoilLand.class.getDeclaredFields();
     private static final String END_COMMAND = "HARVEST";
     private static final String PRIVATE = "private";
-    private static final String PROTEKTED = "private";
+    private static final String PROTECKTED = "private";
+
 }
