@@ -1,7 +1,5 @@
 package harvestingFields;
 
-import org.w3c.dom.ls.LSOutput;
-
 import java.lang.reflect.Field;
 import java.util.Scanner;
 
@@ -13,5 +11,4 @@ public class Main {
     private static final String PROTECKTED = "private";
 
 
-    LSOutput
 }
