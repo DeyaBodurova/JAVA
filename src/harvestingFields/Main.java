@@ -9,5 +9,4 @@ public class Main {
     private static final String PRIVATE = "private";
     private static final String PROTECTED = "private";
 
-
 }
