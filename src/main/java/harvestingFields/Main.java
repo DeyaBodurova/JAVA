@@ -8,6 +8,7 @@ public class Main {
     private static final String END_COMMAND = "HARVEST";
     private static final String PRIVATE = "private";
     private static final String PROTECTED = "protected";
+    private static final String PUBLIC = "public";
 
 
 }
