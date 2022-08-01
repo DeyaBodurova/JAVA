@@ -19,13 +19,12 @@ public class DatabaseTest {
         for (int i = 0; i < numbers.length; i++) {
             assertEquals(numbers[i],dbElements[i]);
         }
-
        // assertEquals(numbers,dbElements);
     }
 
-    @Test
-    public void createDatabaseWithWrongSize() {
-
+    @Test (expected = OperationNotSupportedException.class)
+    public void createDatabaseConstructorWithLessThanOneElements() throws OperationNotSupportedException {
+        Database database= new Database();
     }
 
 }
