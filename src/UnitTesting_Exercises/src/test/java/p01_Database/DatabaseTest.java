@@ -1,7 +1,18 @@
 package p01_Database;
 
-import junit.framework.TestCase;
+import org.junit.Test;
 
-public class DatabaseTest extends TestCase {
+public class DatabaseTest {
+
+
+    @Test
+    public void createDatabase() {
+
+    }
+
+    @Test
+    public void createDatabaseWithWrongSize() {
+
+    }
 
 }
